@@ -1,0 +1,10 @@
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\bin\Debug\dnd_helper.exe.config
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\bin\Debug\dnd_helper.exe
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\bin\Debug\dnd_helper.pdb
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.csprojAssemblyReference.cache
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.Form1.resources
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.Properties.Resources.resources
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.csproj.GenerateResource.cache
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.csproj.CoreCompileInputs.cache
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.exe
+C:\Users\SunRay\source\repos\dnd_helper\dnd_helper\obj\Debug\dnd_helper.pdb
