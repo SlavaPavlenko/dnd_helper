@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -140,8 +141,13 @@ namespace dnd_helper
             if (acrobatics_other_textBox.Text != "")
                 other = Convert.ToInt32(acrobatics_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (acrobatics_mod_textBox.Text != "")
+                mod = Convert.ToInt32(acrobatics_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            acrobatics_result_textBox.Text = (bonus + Convert.ToInt32(acrobatics_mod_textBox.Text) + trained + armorFine + other).ToString();
+            acrobatics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
         }
         private void athletics_change()
         {
@@ -165,8 +171,13 @@ namespace dnd_helper
             if (athletics_other_textBox.Text != "")
                 other = Convert.ToInt32(athletics_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (athletics_mod_textBox.Text != "")
+                mod = Convert.ToInt32(athletics_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            athletics_result_textBox.Text = (bonus + Convert.ToInt32(athletics_mod_textBox.Text) + trained + armorFine + other).ToString();
+            athletics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
         }
         private void attentiveness_change()
         {
@@ -185,8 +196,13 @@ namespace dnd_helper
             if (attentiveness_other_textBox.Text != "")
                 other = Convert.ToInt32(attentiveness_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (attentiveness_mod_textBox.Text != "")
+                mod = Convert.ToInt32(attentiveness_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            attentiveness_result_textBox.Text = (bonus + Convert.ToInt32(attentiveness_mod_textBox.Text) + trained + other).ToString();
+            attentiveness_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void steal_change()
         {
@@ -210,8 +226,13 @@ namespace dnd_helper
             if (steal_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (steal_mod_textBox.Text != "")
+                mod = Convert.ToInt32(steal_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            steal_result_textBox.Text = (bonus + Convert.ToInt32(steal_mod_textBox.Text) + trained + armorFine + other).ToString();
+            steal_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
         }
         private void endurance_change()
         {
@@ -235,8 +256,13 @@ namespace dnd_helper
             if (endurance_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (endurance_mod_textBox.Text != "")
+                mod = Convert.ToInt32(endurance_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            endurance_result_textBox.Text = (bonus + Convert.ToInt32(endurance_mod_textBox.Text) + trained + armorFine + other).ToString();
+            endurance_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
         }
         private void terrifying_change()
         {
@@ -255,8 +281,13 @@ namespace dnd_helper
             if (terrifying_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (terrifying_mod_textBox.Text != "")
+                mod = Convert.ToInt32(terrifying_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            terrifying_result_textBox.Text = (bonus + Convert.ToInt32(terrifying_mod_textBox.Text) + trained + other).ToString();
+            terrifying_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void streetKnowlage_change()
         {
@@ -275,8 +306,13 @@ namespace dnd_helper
             if (streetKnowlage_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (streetKnowlage_mod_textBox.Text != "")
+                mod = Convert.ToInt32(streetKnowlage_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            streetKnowlage_result_textBox.Text = (bonus + Convert.ToInt32(streetKnowlage_mod_textBox.Text) + trained + other).ToString();
+            streetKnowlage_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void history_change()
         {
@@ -295,8 +331,13 @@ namespace dnd_helper
             if (history_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (history_mod_textBox.Text != "")
+                mod = Convert.ToInt32(history_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            history_result_textBox.Text = (bonus + Convert.ToInt32(history_mod_textBox.Text) + trained + other).ToString();
+            history_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void magic_change()
         {
@@ -315,8 +356,13 @@ namespace dnd_helper
             if (magic_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (magic_mod_textBox.Text != "")
+                mod = Convert.ToInt32(magic_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            magic_result_textBox.Text = (bonus + Convert.ToInt32(magic_mod_textBox.Text) + trained + other).ToString();
+            magic_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void cheating_change()
         {
@@ -335,8 +381,13 @@ namespace dnd_helper
             if (cheating_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (cheating_mod_textBox.Text != "")
+                mod = Convert.ToInt32(cheating_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            cheating_result_textBox.Text = (bonus + Convert.ToInt32(cheating_mod_textBox.Text) + trained + other).ToString();
+            cheating_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void discussion_change()
         {
@@ -355,8 +406,13 @@ namespace dnd_helper
             if (discussion_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (discussion_mod_textBox.Text != "")
+                mod = Convert.ToInt32(discussion_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            discussion_result_textBox.Text = (bonus + Convert.ToInt32(discussion_mod_textBox.Text) + trained + other).ToString();
+            discussion_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void dungeons_change()
         {
@@ -375,8 +431,13 @@ namespace dnd_helper
             if (dungeons_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (dungeons_mod_textBox.Text != "")
+                mod = Convert.ToInt32(dungeons_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            dungeons_result_textBox.Text = (bonus + Convert.ToInt32(dungeons_mod_textBox.Text) + trained + other).ToString();
+            dungeons_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void nature_change()
         {
@@ -395,8 +456,13 @@ namespace dnd_helper
             if (nature_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (nature_mod_textBox.Text != "")
+                mod = Convert.ToInt32(nature_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            nature_result_textBox.Text = (bonus + Convert.ToInt32(nature_mod_textBox.Text) + trained + other).ToString();
+            nature_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void insight_change()
         {
@@ -415,8 +481,13 @@ namespace dnd_helper
             if (insight_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (insight_mod_textBox.Text != "")
+                mod = Convert.ToInt32(insight_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            insight_result_textBox.Text = (bonus + Convert.ToInt32(insight_mod_textBox.Text) + trained + other).ToString();
+            insight_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void religion_change()
         {
@@ -435,8 +506,13 @@ namespace dnd_helper
             if (religion_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (religion_mod_textBox.Text != "")
+                mod = Convert.ToInt32(religion_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            religion_result_textBox.Text = (bonus + Convert.ToInt32(religion_mod_textBox.Text) + trained + other).ToString();
+            religion_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void stealth_change()
         {
@@ -460,8 +536,13 @@ namespace dnd_helper
             if (stealth_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (stealth_mod_textBox.Text != "")
+                mod = Convert.ToInt32(stealth_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            stealth_result_textBox.Text = (bonus + Convert.ToInt32(stealth_mod_textBox.Text) + trained + armorFine + other).ToString();
+            stealth_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
         }
         private void curing_change()
         {
@@ -480,8 +561,13 @@ namespace dnd_helper
             if (curing_other_textBox.Text != "")
                 other = Convert.ToInt32(steal_other_textBox.Text);
             else other = 0;
+            //вычисление модификатора
+            int mod;
+            if (curing_mod_textBox.Text != "")
+                mod = Convert.ToInt32(curing_mod_textBox.Text);
+            else mod = 0;
             //вычисление результата
-            curing_result_textBox.Text = (bonus + Convert.ToInt32(curing_mod_textBox.Text) + trained + other).ToString();
+            curing_result_textBox.Text = (bonus + mod + trained + other).ToString();
         }
         private void wounded_change()
         {
@@ -532,8 +618,435 @@ namespace dnd_helper
             religion_change();
             stealth_change();
             curing_change();
-            //
+            //ранение
             wounded_change();
+        }
+
+        private void strange_hilight_on()
+        {
+            Color color = Color.Yellow;
+            strange_label.BackColor = color;
+            athletics_label.BackColor = color;
+        }
+        private void strange_hilight_off()
+        {
+            Color color = Color.Empty;
+            strange_label.BackColor = color;
+            athletics_label.BackColor = color;
+        }
+        private void stamina_hilight_on()
+        {
+            Color color = Color.Yellow;
+            stamina_label.BackColor = color;
+            endurance_label.BackColor = color;
+        }
+        private void stamina_hilight_off()
+        {
+            Color color = Color.Empty;
+            stamina_label.BackColor = color;
+            endurance_label.BackColor = color;
+        }
+
+        private void agility_hilight_on()
+        {
+            Color color = Color.Yellow;
+            agility_label.BackColor = color;
+            acrobatics_label.BackColor = color;
+            steal_label.BackColor = color;
+            stealth_label.BackColor = color;
+        }
+        private void agility_hilight_off()
+        {
+            Color color = Color.Empty;
+            agility_label.BackColor = color;
+            acrobatics_label.BackColor = color;
+            steal_label.BackColor = color;
+            stealth_label.BackColor = color;
+        }
+        private void intelligence_hilight_on()
+        {
+            Color color = Color.Yellow;
+            intelligence_label.BackColor = color;
+            history_label.BackColor = color;
+            magic_label.BackColor = color;
+            religion_label.BackColor = color;
+        }
+        private void intelligence_hilight_off()
+        {
+            Color color = Color.Empty;
+            intelligence_label.BackColor = color;
+            history_label.BackColor = color;
+            magic_label.BackColor = color;
+            religion_label.BackColor = color;
+        }
+        private void wizdom_hilight_on()
+        {
+            Color color = Color.Yellow;
+            wizdom_label.BackColor = color;
+            attentiveness_label.BackColor = color;
+            dungeons_label.BackColor = color;
+            nature_label.BackColor = color;
+            insight_label.BackColor = color;
+            curing_label.BackColor = color;
+        }
+        private void wizdom_hilight_off()
+        {
+            Color color = Color.Empty;
+            wizdom_label.BackColor = color;
+            attentiveness_label.BackColor = color;
+            dungeons_label.BackColor = color;
+            nature_label.BackColor = color;
+            insight_label.BackColor = color;
+            curing_label.BackColor = color;
+        }
+        private void charisma_hilight_on()
+        {
+            Color color = Color.Yellow;
+            charisma_label.BackColor = color;
+            terrifying_label.BackColor = color;
+            streetKnowlage_label.BackColor = color;
+            cheating_label.BackColor = color;
+            discussion_label.BackColor = color;
+        }
+        private void charisma_hilight_off()
+        {
+            Color color = Color.Empty;
+            charisma_label.BackColor = color;
+            terrifying_label.BackColor = color;
+            streetKnowlage_label.BackColor = color;
+            cheating_label.BackColor = color;
+            discussion_label.BackColor = color;
+        }
+
+        private void strange_label_MouseEnter(object sender, EventArgs e)
+        {
+            strange_hilight_on();
+        }
+
+        private void strange_label_MouseLeave(object sender, EventArgs e)
+        {
+            strange_hilight_off();
+        }
+
+        private void stamina_label_MouseEnter(object sender, EventArgs e)
+        {
+            stamina_hilight_on();
+        }
+
+        private void stamina_label_MouseLeave(object sender, EventArgs e)
+        {
+            stamina_hilight_off();
+        }
+
+        private void agility_label_MouseEnter(object sender, EventArgs e)
+        {
+            agility_hilight_on();
+        }
+
+        private void agility_label_MouseLeave(object sender, EventArgs e)
+        {
+            agility_hilight_off();
+        }
+
+        private void intelligence_label_MouseEnter(object sender, EventArgs e)
+        {
+            intelligence_hilight_on();
+        }
+
+        private void intelligence_label_MouseLeave(object sender, EventArgs e)
+        {
+            intelligence_hilight_off();
+        }
+
+        private void wizdom_label_MouseEnter(object sender, EventArgs e)
+        {
+            wizdom_hilight_on();
+        }
+
+        private void wizdom_label_MouseLeave(object sender, EventArgs e)
+        {
+            wizdom_hilight_off();
+        }
+
+        private void charisma_label_MouseEnter(object sender, EventArgs e)
+        {
+            charisma_hilight_on();
+        }
+
+        private void charisma_label_MouseLeave(object sender, EventArgs e)
+        {
+            charisma_hilight_off();
+        }
+
+
+        private void strange_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                strange_change();
+                e.Handled = true;
+            }
+        }
+
+        private void stamina_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                stamina_change();
+                e.Handled = true;
+            }
+        }
+
+        private void agility_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                agility_change();
+                e.Handled = true;
+            }
+        }
+
+        private void intelligence_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                intelligence_change();
+                e.Handled = true;
+            }
+        }
+
+        private void wizdom_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                wizdom_change();
+                e.Handled = true;
+            }
+        }
+
+        private void charisma_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                charisma_change();
+                e.Handled = true;
+            }
+        }
+
+        private void lvl_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                strange_change();
+                stamina_change();
+                agility_change();
+                intelligence_change();
+                wizdom_change();
+                charisma_change();
+
+                //копирование мод. + 1/2 ур.
+                acrobatics_mod_textBox.Text = mod_lvl_agility_textBox.Text;
+                athletics_mod_textBox.Text = mod_lvl_strange_textBox.Text;
+                attentiveness_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                steal_mod_textBox.Text = mod_lvl_agility_textBox.Text;
+                endurance_mod_textBox.Text = mod_lvl_stamina_textBox.Text;
+                terrifying_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
+                streetKnowlage_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
+                history_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
+                magic_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
+                cheating_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
+                discussion_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
+                dungeons_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                nature_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                insight_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                religion_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
+                stealth_mod_textBox.Text = mod_lvl_agility_textBox.Text;
+                curing_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+
+                acrobatics_change();
+                athletics_change();
+                attentiveness_change();
+                stealth_change();
+                endurance_change();
+                terrifying_change();
+                streetKnowlage_change();
+                history_change();
+                magic_change();
+                cheating_change();
+                discussion_change();
+                dungeons_change();
+                nature_change();
+                insight_change();
+                religion_change();
+                stealth_change();
+                curing_change();
+                e.Handled = true;
+            }
+        }
+
+        private void maxHits_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                wounded_change();
+                e.Handled = true;
+            }
+        }
+
+        private void acrobatics_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                acrobatics_mod_textBox.Text = mod_lvl_agility_textBox.Text;
+                acrobatics_change();
+                e.Handled = true;
+            }
+        }
+
+        private void athletics_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                athletics_change();
+                e.Handled = true;
+            }
+        }
+
+        private void attentiveness_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                attentiveness_change();
+                e.Handled = true;
+            }
+        }
+
+        private void steal_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                steal_change();
+                e.Handled = true;
+            }
+        }
+
+        private void endurance_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                endurance_change();
+                e.Handled = true;
+            }
+        }
+
+        private void terrifying_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                terrifying_change();
+                e.Handled = true;
+            }
+        }
+
+        private void streetKnowlage_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                streetKnowlage_change();
+                e.Handled = true;
+            }
+        }
+
+        private void history_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                history_change();
+                e.Handled = true;
+            }
+        }
+
+        private void magic_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                magic_change();
+                e.Handled = true;
+            }
+        }
+
+        private void cheating_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                cheating_change();
+                e.Handled = true;
+            }
+        }
+
+        private void discussion_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                discussion_change();
+                e.Handled = true;
+            }
+        }
+
+        private void dungeons_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                dungeons_change();
+                e.Handled = true;
+            }
+        }
+
+        private void nature_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                nature_change();
+                e.Handled = true;
+            }
+        }
+
+        private void insight_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                insight_change();
+                e.Handled = true;
+            }
+        }
+
+        private void religion_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                religion_change();
+                e.Handled = true;
+            }
+        }
+
+        private void stealth_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                stealth_change();
+                e.Handled = true;
+            }
+        }
+
+        private void curing_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                curing_change();
+                e.Handled = true;
+            }
         }
     }
 }

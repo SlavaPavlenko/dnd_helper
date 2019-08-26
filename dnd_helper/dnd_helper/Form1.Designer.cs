@@ -561,9 +561,11 @@
             // curing_textBox
             // 
             this.curing_textBox.Location = new System.Drawing.Point(12, 448);
+            this.curing_textBox.MaxLength = 3;
             this.curing_textBox.Name = "curing_textBox";
             this.curing_textBox.Size = new System.Drawing.Size(31, 20);
             this.curing_textBox.TabIndex = 2;
+            this.curing_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.curing_textBox_KeyPress);
             // 
             // curing_label
             // 
@@ -577,9 +579,11 @@
             // dungeons_textBox
             // 
             this.dungeons_textBox.Location = new System.Drawing.Point(11, 318);
+            this.dungeons_textBox.MaxLength = 3;
             this.dungeons_textBox.Name = "dungeons_textBox";
             this.dungeons_textBox.Size = new System.Drawing.Size(31, 20);
             this.dungeons_textBox.TabIndex = 2;
+            this.dungeons_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dungeons_textBox_KeyPress);
             // 
             // dungeons_label
             // 
@@ -593,23 +597,29 @@
             // stealth_textBox
             // 
             this.stealth_textBox.Location = new System.Drawing.Point(12, 422);
+            this.stealth_textBox.MaxLength = 3;
             this.stealth_textBox.Name = "stealth_textBox";
             this.stealth_textBox.Size = new System.Drawing.Size(31, 20);
             this.stealth_textBox.TabIndex = 2;
+            this.stealth_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.stealth_textBox_KeyPress);
             // 
             // terrifying_textBox
             // 
             this.terrifying_textBox.Location = new System.Drawing.Point(11, 162);
+            this.terrifying_textBox.MaxLength = 3;
             this.terrifying_textBox.Name = "terrifying_textBox";
             this.terrifying_textBox.Size = new System.Drawing.Size(31, 20);
             this.terrifying_textBox.TabIndex = 2;
+            this.terrifying_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.terrifying_textBox_KeyPress);
             // 
             // discussion_textBox
             // 
             this.discussion_textBox.Location = new System.Drawing.Point(11, 292);
+            this.discussion_textBox.MaxLength = 3;
             this.discussion_textBox.Name = "discussion_textBox";
             this.discussion_textBox.Size = new System.Drawing.Size(31, 20);
             this.discussion_textBox.TabIndex = 2;
+            this.discussion_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.discussion_textBox_KeyPress);
             // 
             // stealth_label
             // 
@@ -641,23 +651,29 @@
             // religion_textBox
             // 
             this.religion_textBox.Location = new System.Drawing.Point(12, 396);
+            this.religion_textBox.MaxLength = 3;
             this.religion_textBox.Name = "religion_textBox";
             this.religion_textBox.Size = new System.Drawing.Size(31, 20);
             this.religion_textBox.TabIndex = 2;
+            this.religion_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.religion_textBox_KeyPress);
             // 
             // endurance_textBox
             // 
             this.endurance_textBox.Location = new System.Drawing.Point(11, 136);
+            this.endurance_textBox.MaxLength = 3;
             this.endurance_textBox.Name = "endurance_textBox";
             this.endurance_textBox.Size = new System.Drawing.Size(31, 20);
             this.endurance_textBox.TabIndex = 2;
+            this.endurance_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.endurance_textBox_KeyPress);
             // 
             // cheating_textBox
             // 
             this.cheating_textBox.Location = new System.Drawing.Point(11, 266);
+            this.cheating_textBox.MaxLength = 3;
             this.cheating_textBox.Name = "cheating_textBox";
             this.cheating_textBox.Size = new System.Drawing.Size(31, 20);
             this.cheating_textBox.TabIndex = 2;
+            this.cheating_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cheating_textBox_KeyPress);
             // 
             // religion_label
             // 
@@ -689,23 +705,29 @@
             // insight_textBox
             // 
             this.insight_textBox.Location = new System.Drawing.Point(12, 370);
+            this.insight_textBox.MaxLength = 3;
             this.insight_textBox.Name = "insight_textBox";
             this.insight_textBox.Size = new System.Drawing.Size(31, 20);
             this.insight_textBox.TabIndex = 2;
+            this.insight_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.insight_textBox_KeyPress);
             // 
             // steal_textBox
             // 
             this.steal_textBox.Location = new System.Drawing.Point(11, 110);
+            this.steal_textBox.MaxLength = 3;
             this.steal_textBox.Name = "steal_textBox";
             this.steal_textBox.Size = new System.Drawing.Size(31, 20);
             this.steal_textBox.TabIndex = 2;
+            this.steal_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.steal_textBox_KeyPress);
             // 
             // magic_textBox
             // 
             this.magic_textBox.Location = new System.Drawing.Point(11, 240);
+            this.magic_textBox.MaxLength = 3;
             this.magic_textBox.Name = "magic_textBox";
             this.magic_textBox.Size = new System.Drawing.Size(31, 20);
             this.magic_textBox.TabIndex = 2;
+            this.magic_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.magic_textBox_KeyPress);
             // 
             // insight_label
             // 
@@ -737,23 +759,29 @@
             // nature_textBox
             // 
             this.nature_textBox.Location = new System.Drawing.Point(12, 344);
+            this.nature_textBox.MaxLength = 3;
             this.nature_textBox.Name = "nature_textBox";
             this.nature_textBox.Size = new System.Drawing.Size(31, 20);
             this.nature_textBox.TabIndex = 2;
+            this.nature_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nature_textBox_KeyPress);
             // 
             // attentiveness_textBox
             // 
             this.attentiveness_textBox.Location = new System.Drawing.Point(11, 84);
+            this.attentiveness_textBox.MaxLength = 3;
             this.attentiveness_textBox.Name = "attentiveness_textBox";
             this.attentiveness_textBox.Size = new System.Drawing.Size(31, 20);
             this.attentiveness_textBox.TabIndex = 2;
+            this.attentiveness_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.attentiveness_textBox_KeyPress);
             // 
             // history_textBox
             // 
             this.history_textBox.Location = new System.Drawing.Point(11, 214);
+            this.history_textBox.MaxLength = 3;
             this.history_textBox.Name = "history_textBox";
             this.history_textBox.Size = new System.Drawing.Size(31, 20);
             this.history_textBox.TabIndex = 2;
+            this.history_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.history_textBox_KeyPress);
             // 
             // nature_label
             // 
@@ -785,9 +813,11 @@
             // athletics_textBox
             // 
             this.athletics_textBox.Location = new System.Drawing.Point(11, 58);
+            this.athletics_textBox.MaxLength = 3;
             this.athletics_textBox.Name = "athletics_textBox";
             this.athletics_textBox.Size = new System.Drawing.Size(31, 20);
             this.athletics_textBox.TabIndex = 2;
+            this.athletics_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.athletics_textBox_KeyPress);
             // 
             // athletics_label
             // 
@@ -801,9 +831,11 @@
             // streetKnowlage_textBox
             // 
             this.streetKnowlage_textBox.Location = new System.Drawing.Point(11, 188);
+            this.streetKnowlage_textBox.MaxLength = 3;
             this.streetKnowlage_textBox.Name = "streetKnowlage_textBox";
             this.streetKnowlage_textBox.Size = new System.Drawing.Size(31, 20);
             this.streetKnowlage_textBox.TabIndex = 2;
+            this.streetKnowlage_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.streetKnowlage_textBox_KeyPress);
             // 
             // curing_result_textBox
             // 
@@ -816,6 +848,7 @@
             // curing_other_textBox
             // 
             this.curing_other_textBox.Location = new System.Drawing.Point(327, 448);
+            this.curing_other_textBox.MaxLength = 3;
             this.curing_other_textBox.Name = "curing_other_textBox";
             this.curing_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.curing_other_textBox.TabIndex = 2;
@@ -839,6 +872,7 @@
             // stealth_other_textBox
             // 
             this.stealth_other_textBox.Location = new System.Drawing.Point(327, 422);
+            this.stealth_other_textBox.MaxLength = 3;
             this.stealth_other_textBox.Name = "stealth_other_textBox";
             this.stealth_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.stealth_other_textBox.TabIndex = 2;
@@ -861,6 +895,7 @@
             // dungeons_other_textBox
             // 
             this.dungeons_other_textBox.Location = new System.Drawing.Point(327, 319);
+            this.dungeons_other_textBox.MaxLength = 3;
             this.dungeons_other_textBox.Name = "dungeons_other_textBox";
             this.dungeons_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.dungeons_other_textBox.TabIndex = 2;
@@ -884,6 +919,7 @@
             // discussion_other_textBox
             // 
             this.discussion_other_textBox.Location = new System.Drawing.Point(327, 294);
+            this.discussion_other_textBox.MaxLength = 3;
             this.discussion_other_textBox.Name = "discussion_other_textBox";
             this.discussion_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.discussion_other_textBox.TabIndex = 2;
@@ -907,6 +943,7 @@
             // insight_other_textBox
             // 
             this.insight_other_textBox.Location = new System.Drawing.Point(327, 373);
+            this.insight_other_textBox.MaxLength = 3;
             this.insight_other_textBox.Name = "insight_other_textBox";
             this.insight_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.insight_other_textBox.TabIndex = 2;
@@ -930,6 +967,7 @@
             // terrifying_other_textBox
             // 
             this.terrifying_other_textBox.Location = new System.Drawing.Point(327, 162);
+            this.terrifying_other_textBox.MaxLength = 3;
             this.terrifying_other_textBox.Name = "terrifying_other_textBox";
             this.terrifying_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.terrifying_other_textBox.TabIndex = 2;
@@ -953,6 +991,7 @@
             // magic_other_textBox
             // 
             this.magic_other_textBox.Location = new System.Drawing.Point(327, 243);
+            this.magic_other_textBox.MaxLength = 3;
             this.magic_other_textBox.Name = "magic_other_textBox";
             this.magic_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.magic_other_textBox.TabIndex = 2;
@@ -976,6 +1015,7 @@
             // religion_other_textBox
             // 
             this.religion_other_textBox.Location = new System.Drawing.Point(327, 396);
+            this.religion_other_textBox.MaxLength = 3;
             this.religion_other_textBox.Name = "religion_other_textBox";
             this.religion_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.religion_other_textBox.TabIndex = 2;
@@ -1007,6 +1047,7 @@
             // endurance_other_textBox
             // 
             this.endurance_other_textBox.Location = new System.Drawing.Point(327, 136);
+            this.endurance_other_textBox.MaxLength = 3;
             this.endurance_other_textBox.Name = "endurance_other_textBox";
             this.endurance_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.endurance_other_textBox.TabIndex = 2;
@@ -1014,6 +1055,7 @@
             // endurance_armorFine_textBox
             // 
             this.endurance_armorFine_textBox.Location = new System.Drawing.Point(273, 136);
+            this.endurance_armorFine_textBox.MaxLength = 3;
             this.endurance_armorFine_textBox.Name = "endurance_armorFine_textBox";
             this.endurance_armorFine_textBox.Size = new System.Drawing.Size(31, 20);
             this.endurance_armorFine_textBox.TabIndex = 2;
@@ -1029,6 +1071,7 @@
             // cheating_other_textBox
             // 
             this.cheating_other_textBox.Location = new System.Drawing.Point(327, 269);
+            this.cheating_other_textBox.MaxLength = 3;
             this.cheating_other_textBox.Name = "cheating_other_textBox";
             this.cheating_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.cheating_other_textBox.TabIndex = 2;
@@ -1052,6 +1095,7 @@
             // nature_other_textBox
             // 
             this.nature_other_textBox.Location = new System.Drawing.Point(327, 347);
+            this.nature_other_textBox.MaxLength = 3;
             this.nature_other_textBox.Name = "nature_other_textBox";
             this.nature_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.nature_other_textBox.TabIndex = 2;
@@ -1075,6 +1119,7 @@
             // attentiveness_other_textBox
             // 
             this.attentiveness_other_textBox.Location = new System.Drawing.Point(327, 87);
+            this.attentiveness_other_textBox.MaxLength = 3;
             this.attentiveness_other_textBox.Name = "attentiveness_other_textBox";
             this.attentiveness_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.attentiveness_other_textBox.TabIndex = 2;
@@ -1098,6 +1143,7 @@
             // history_other_textBox
             // 
             this.history_other_textBox.Location = new System.Drawing.Point(327, 217);
+            this.history_other_textBox.MaxLength = 3;
             this.history_other_textBox.Name = "history_other_textBox";
             this.history_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.history_other_textBox.TabIndex = 2;
@@ -1129,6 +1175,7 @@
             // steal_other_textBox
             // 
             this.steal_other_textBox.Location = new System.Drawing.Point(327, 110);
+            this.steal_other_textBox.MaxLength = 3;
             this.steal_other_textBox.Name = "steal_other_textBox";
             this.steal_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.steal_other_textBox.TabIndex = 2;
@@ -1136,6 +1183,7 @@
             // steal_armorFine_textBox
             // 
             this.steal_armorFine_textBox.Location = new System.Drawing.Point(273, 110);
+            this.steal_armorFine_textBox.MaxLength = 3;
             this.steal_armorFine_textBox.Name = "steal_armorFine_textBox";
             this.steal_armorFine_textBox.Size = new System.Drawing.Size(31, 20);
             this.steal_armorFine_textBox.TabIndex = 2;
@@ -1151,6 +1199,7 @@
             // streetKnowlage_other_textBox
             // 
             this.streetKnowlage_other_textBox.Location = new System.Drawing.Point(327, 191);
+            this.streetKnowlage_other_textBox.MaxLength = 3;
             this.streetKnowlage_other_textBox.Name = "streetKnowlage_other_textBox";
             this.streetKnowlage_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.streetKnowlage_other_textBox.TabIndex = 2;
@@ -1174,6 +1223,7 @@
             // athletics_armorFine_textBox
             // 
             this.athletics_armorFine_textBox.Location = new System.Drawing.Point(273, 61);
+            this.athletics_armorFine_textBox.MaxLength = 3;
             this.athletics_armorFine_textBox.Name = "athletics_armorFine_textBox";
             this.athletics_armorFine_textBox.Size = new System.Drawing.Size(31, 20);
             this.athletics_armorFine_textBox.TabIndex = 2;
@@ -1189,6 +1239,7 @@
             // acrobatics_other_textBox
             // 
             this.acrobatics_other_textBox.Location = new System.Drawing.Point(327, 61);
+            this.acrobatics_other_textBox.MaxLength = 3;
             this.acrobatics_other_textBox.Name = "acrobatics_other_textBox";
             this.acrobatics_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.acrobatics_other_textBox.TabIndex = 2;
@@ -1196,6 +1247,7 @@
             // acrobatics_armorFine_textBox
             // 
             this.acrobatics_armorFine_textBox.Location = new System.Drawing.Point(273, 35);
+            this.acrobatics_armorFine_textBox.MaxLength = 3;
             this.acrobatics_armorFine_textBox.Name = "acrobatics_armorFine_textBox";
             this.acrobatics_armorFine_textBox.Size = new System.Drawing.Size(31, 20);
             this.acrobatics_armorFine_textBox.TabIndex = 2;
@@ -1211,6 +1263,7 @@
             // athletics_other_textBox
             // 
             this.athletics_other_textBox.Location = new System.Drawing.Point(327, 35);
+            this.athletics_other_textBox.MaxLength = 3;
             this.athletics_other_textBox.Name = "athletics_other_textBox";
             this.athletics_other_textBox.Size = new System.Drawing.Size(31, 20);
             this.athletics_other_textBox.TabIndex = 2;
@@ -1243,9 +1296,11 @@
             // acrobatics_textBox
             // 
             this.acrobatics_textBox.Location = new System.Drawing.Point(11, 32);
+            this.acrobatics_textBox.MaxLength = 3;
             this.acrobatics_textBox.Name = "acrobatics_textBox";
             this.acrobatics_textBox.Size = new System.Drawing.Size(31, 20);
             this.acrobatics_textBox.TabIndex = 2;
+            this.acrobatics_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.acrobatics_textBox_KeyPress);
             // 
             // acrobatics_label
             // 
@@ -1660,6 +1715,7 @@
             // healing_amount_textBox
             // 
             this.healing_amount_textBox.Location = new System.Drawing.Point(215, 41);
+            this.healing_amount_textBox.MaxLength = 2;
             this.healing_amount_textBox.Name = "healing_amount_textBox";
             this.healing_amount_textBox.Size = new System.Drawing.Size(36, 20);
             this.healing_amount_textBox.TabIndex = 2;
@@ -1674,6 +1730,7 @@
             // healingsUsed_textBox
             // 
             this.healingsUsed_textBox.Location = new System.Drawing.Point(181, 79);
+            this.healingsUsed_textBox.MaxLength = 2;
             this.healingsUsed_textBox.Name = "healingsUsed_textBox";
             this.healingsUsed_textBox.Size = new System.Drawing.Size(36, 20);
             this.healingsUsed_textBox.TabIndex = 2;
@@ -1689,6 +1746,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(62, 79);
+            this.textBox1.MaxLength = 3;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(36, 20);
             this.textBox1.TabIndex = 2;
@@ -1696,6 +1754,7 @@
             // curHits_textBox
             // 
             this.curHits_textBox.Location = new System.Drawing.Point(7, 79);
+            this.curHits_textBox.MaxLength = 3;
             this.curHits_textBox.Name = "curHits_textBox";
             this.curHits_textBox.Size = new System.Drawing.Size(36, 20);
             this.curHits_textBox.TabIndex = 2;
@@ -1739,9 +1798,11 @@
             // maxHits_textBox
             // 
             this.maxHits_textBox.Location = new System.Drawing.Point(7, 40);
+            this.maxHits_textBox.MaxLength = 3;
             this.maxHits_textBox.Name = "maxHits_textBox";
             this.maxHits_textBox.Size = new System.Drawing.Size(36, 20);
             this.maxHits_textBox.TabIndex = 2;
+            this.maxHits_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maxHits_textBox_KeyPress);
             // 
             // stats_groupBox
             // 
@@ -1787,6 +1848,8 @@
             this.charisma_label.Size = new System.Drawing.Size(52, 13);
             this.charisma_label.TabIndex = 19;
             this.charisma_label.Text = "Харизма";
+            this.charisma_label.MouseEnter += new System.EventHandler(this.charisma_label_MouseEnter);
+            this.charisma_label.MouseLeave += new System.EventHandler(this.charisma_label_MouseLeave);
             // 
             // mod_lvl_charisma_textBox
             // 
@@ -1807,9 +1870,11 @@
             // charisma_textBox
             // 
             this.charisma_textBox.Location = new System.Drawing.Point(11, 162);
+            this.charisma_textBox.MaxLength = 3;
             this.charisma_textBox.Name = "charisma_textBox";
             this.charisma_textBox.Size = new System.Drawing.Size(31, 20);
             this.charisma_textBox.TabIndex = 22;
+            this.charisma_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.charisma_textBox_KeyPress);
             // 
             // wizdom_label
             // 
@@ -1819,6 +1884,8 @@
             this.wizdom_label.Size = new System.Drawing.Size(56, 13);
             this.wizdom_label.TabIndex = 15;
             this.wizdom_label.Text = "Мудрость";
+            this.wizdom_label.MouseEnter += new System.EventHandler(this.wizdom_label_MouseEnter);
+            this.wizdom_label.MouseLeave += new System.EventHandler(this.wizdom_label_MouseLeave);
             // 
             // mod_lvl_wizdom_textBox
             // 
@@ -1839,9 +1906,11 @@
             // wizdom_textBox
             // 
             this.wizdom_textBox.Location = new System.Drawing.Point(11, 136);
+            this.wizdom_textBox.MaxLength = 3;
             this.wizdom_textBox.Name = "wizdom_textBox";
             this.wizdom_textBox.Size = new System.Drawing.Size(31, 20);
             this.wizdom_textBox.TabIndex = 18;
+            this.wizdom_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.wizdom_textBox_KeyPress);
             // 
             // intelligence_label
             // 
@@ -1851,6 +1920,8 @@
             this.intelligence_label.Size = new System.Drawing.Size(61, 13);
             this.intelligence_label.TabIndex = 11;
             this.intelligence_label.Text = "Интеллект";
+            this.intelligence_label.MouseEnter += new System.EventHandler(this.intelligence_label_MouseEnter);
+            this.intelligence_label.MouseLeave += new System.EventHandler(this.intelligence_label_MouseLeave);
             // 
             // mod_lvl_intelligence_textBox
             // 
@@ -1871,9 +1942,11 @@
             // intelligence_textBox
             // 
             this.intelligence_textBox.Location = new System.Drawing.Point(11, 110);
+            this.intelligence_textBox.MaxLength = 3;
             this.intelligence_textBox.Name = "intelligence_textBox";
             this.intelligence_textBox.Size = new System.Drawing.Size(31, 20);
             this.intelligence_textBox.TabIndex = 14;
+            this.intelligence_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.intelligence_textBox_KeyPress);
             // 
             // agility_label
             // 
@@ -1883,6 +1956,8 @@
             this.agility_label.Size = new System.Drawing.Size(56, 13);
             this.agility_label.TabIndex = 7;
             this.agility_label.Text = "Ловкость";
+            this.agility_label.MouseEnter += new System.EventHandler(this.agility_label_MouseEnter);
+            this.agility_label.MouseLeave += new System.EventHandler(this.agility_label_MouseLeave);
             // 
             // mod_lvl_agility_textBox
             // 
@@ -1903,9 +1978,11 @@
             // agility_textBox
             // 
             this.agility_textBox.Location = new System.Drawing.Point(11, 84);
+            this.agility_textBox.MaxLength = 3;
             this.agility_textBox.Name = "agility_textBox";
             this.agility_textBox.Size = new System.Drawing.Size(31, 20);
             this.agility_textBox.TabIndex = 10;
+            this.agility_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.agility_textBox_KeyPress);
             // 
             // stamina_label
             // 
@@ -1915,6 +1992,8 @@
             this.stamina_label.Size = new System.Drawing.Size(82, 13);
             this.stamina_label.TabIndex = 3;
             this.stamina_label.Text = "Телосложение";
+            this.stamina_label.MouseEnter += new System.EventHandler(this.stamina_label_MouseEnter);
+            this.stamina_label.MouseLeave += new System.EventHandler(this.stamina_label_MouseLeave);
             // 
             // mod_lvl_stamina_textBox
             // 
@@ -1935,18 +2014,24 @@
             // stamina_textBox
             // 
             this.stamina_textBox.Location = new System.Drawing.Point(11, 58);
+            this.stamina_textBox.MaxLength = 3;
             this.stamina_textBox.Name = "stamina_textBox";
             this.stamina_textBox.Size = new System.Drawing.Size(31, 20);
             this.stamina_textBox.TabIndex = 6;
+            this.stamina_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.stamina_textBox_KeyPress);
             // 
             // strange_label
             // 
             this.strange_label.AutoSize = true;
+            this.strange_label.BackColor = System.Drawing.SystemColors.Control;
+            this.strange_label.ForeColor = System.Drawing.SystemColors.ControlText;
             this.strange_label.Location = new System.Drawing.Point(49, 35);
             this.strange_label.Name = "strange_label";
             this.strange_label.Size = new System.Drawing.Size(32, 13);
             this.strange_label.TabIndex = 0;
             this.strange_label.Text = "Сила";
+            this.strange_label.MouseEnter += new System.EventHandler(this.strange_label_MouseEnter);
+            this.strange_label.MouseLeave += new System.EventHandler(this.strange_label_MouseLeave);
             // 
             // mod_lvl_label
             // 
@@ -1994,9 +2079,11 @@
             // strange_textBox
             // 
             this.strange_textBox.Location = new System.Drawing.Point(11, 32);
+            this.strange_textBox.MaxLength = 3;
             this.strange_textBox.Name = "strange_textBox";
             this.strange_textBox.Size = new System.Drawing.Size(31, 20);
             this.strange_textBox.TabIndex = 2;
+            this.strange_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.strange_textBox_KeyPress);
             // 
             // lvl_textBox
             // 
@@ -2004,13 +2091,14 @@
             this.lvl_textBox.Name = "lvl_textBox";
             this.lvl_textBox.Size = new System.Drawing.Size(30, 20);
             this.lvl_textBox.TabIndex = 2;
+            this.lvl_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lvl_textBox_KeyPress);
             // 
             // name_textBox
             // 
             this.name_textBox.Location = new System.Drawing.Point(42, 55);
             this.name_textBox.Name = "name_textBox";
             this.name_textBox.Size = new System.Drawing.Size(142, 20);
-            this.name_textBox.TabIndex = 2;
+            this.name_textBox.TabIndex = 1;
             // 
             // lvl_label
             // 
