@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.main_panel = new System.Windows.Forms.Panel();
+            this.dices_groupBox = new System.Windows.Forms.GroupBox();
             this.submit_button = new System.Windows.Forms.Button();
             this.skills_groupBox = new System.Windows.Forms.GroupBox();
             this.curing_checkBox = new System.Windows.Forms.CheckBox();
@@ -227,7 +228,13 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dices_amount_textBox = new System.Windows.Forms.TextBox();
+            this.dices_value_textBox = new System.Windows.Forms.TextBox();
+            this.dices_label = new System.Windows.Forms.Label();
+            this.dices_throw_button = new System.Windows.Forms.Button();
+            this.dices_log_textBox = new System.Windows.Forms.TextBox();
             this.main_panel.SuspendLayout();
+            this.dices_groupBox.SuspendLayout();
             this.skills_groupBox.SuspendLayout();
             this.hits_groupBox.SuspendLayout();
             this.stats_groupBox.SuspendLayout();
@@ -236,6 +243,7 @@
             // 
             // main_panel
             // 
+            this.main_panel.Controls.Add(this.dices_groupBox);
             this.main_panel.Controls.Add(this.submit_button);
             this.main_panel.Controls.Add(this.skills_groupBox);
             this.main_panel.Controls.Add(this.hits_groupBox);
@@ -248,12 +256,26 @@
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(839, 579);
+            this.main_panel.Size = new System.Drawing.Size(906, 517);
             this.main_panel.TabIndex = 0;
+            // 
+            // dices_groupBox
+            // 
+            this.dices_groupBox.Controls.Add(this.dices_log_textBox);
+            this.dices_groupBox.Controls.Add(this.dices_throw_button);
+            this.dices_groupBox.Controls.Add(this.dices_label);
+            this.dices_groupBox.Controls.Add(this.dices_value_textBox);
+            this.dices_groupBox.Controls.Add(this.dices_amount_textBox);
+            this.dices_groupBox.Location = new System.Drawing.Point(736, 28);
+            this.dices_groupBox.Name = "dices_groupBox";
+            this.dices_groupBox.Size = new System.Drawing.Size(158, 290);
+            this.dices_groupBox.TabIndex = 6;
+            this.dices_groupBox.TabStop = false;
+            this.dices_groupBox.Text = "Кубики";
             // 
             // submit_button
             // 
-            this.submit_button.Location = new System.Drawing.Point(752, 28);
+            this.submit_button.Location = new System.Drawing.Point(736, 453);
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(75, 23);
             this.submit_button.TabIndex = 5;
@@ -398,7 +420,7 @@
             this.skills_groupBox.Controls.Add(this.skillResult_label);
             this.skills_groupBox.Controls.Add(this.other_label);
             this.skills_groupBox.Controls.Add(this.skill_value_label);
-            this.skills_groupBox.Location = new System.Drawing.Point(286, 55);
+            this.skills_groupBox.Location = new System.Drawing.Point(287, 28);
             this.skills_groupBox.Name = "skills_groupBox";
             this.skills_groupBox.Size = new System.Drawing.Size(443, 478);
             this.skills_groupBox.TabIndex = 4;
@@ -1589,7 +1611,7 @@
             this.hits_groupBox.Controls.Add(this.failedDeathSaves_checkBox1);
             this.hits_groupBox.Controls.Add(this.secondWind_checkBox);
             this.hits_groupBox.Controls.Add(this.maxHits_textBox);
-            this.hits_groupBox.Location = new System.Drawing.Point(12, 285);
+            this.hits_groupBox.Location = new System.Drawing.Point(13, 258);
             this.hits_groupBox.Name = "hits_groupBox";
             this.hits_groupBox.Size = new System.Drawing.Size(268, 248);
             this.hits_groupBox.TabIndex = 3;
@@ -1833,7 +1855,7 @@
             this.stats_groupBox.Controls.Add(this.mod_lvl_strange_textBox);
             this.stats_groupBox.Controls.Add(this.mod_strange_textBox);
             this.stats_groupBox.Controls.Add(this.strange_textBox);
-            this.stats_groupBox.Location = new System.Drawing.Point(12, 81);
+            this.stats_groupBox.Location = new System.Drawing.Point(13, 54);
             this.stats_groupBox.Name = "stats_groupBox";
             this.stats_groupBox.Size = new System.Drawing.Size(268, 198);
             this.stats_groupBox.TabIndex = 3;
@@ -2087,7 +2109,7 @@
             // 
             // lvl_textBox
             // 
-            this.lvl_textBox.Location = new System.Drawing.Point(250, 55);
+            this.lvl_textBox.Location = new System.Drawing.Point(251, 28);
             this.lvl_textBox.Name = "lvl_textBox";
             this.lvl_textBox.Size = new System.Drawing.Size(30, 20);
             this.lvl_textBox.TabIndex = 2;
@@ -2095,7 +2117,7 @@
             // 
             // name_textBox
             // 
-            this.name_textBox.Location = new System.Drawing.Point(42, 55);
+            this.name_textBox.Location = new System.Drawing.Point(43, 28);
             this.name_textBox.Name = "name_textBox";
             this.name_textBox.Size = new System.Drawing.Size(142, 20);
             this.name_textBox.TabIndex = 1;
@@ -2103,7 +2125,7 @@
             // lvl_label
             // 
             this.lvl_label.AutoSize = true;
-            this.lvl_label.Location = new System.Drawing.Point(190, 55);
+            this.lvl_label.Location = new System.Drawing.Point(191, 28);
             this.lvl_label.Name = "lvl_label";
             this.lvl_label.Size = new System.Drawing.Size(54, 13);
             this.lvl_label.TabIndex = 1;
@@ -2112,7 +2134,7 @@
             // name_label
             // 
             this.name_label.AutoSize = true;
-            this.name_label.Location = new System.Drawing.Point(3, 55);
+            this.name_label.Location = new System.Drawing.Point(4, 28);
             this.name_label.Name = "name_label";
             this.name_label.Size = new System.Drawing.Size(32, 13);
             this.name_label.TabIndex = 1;
@@ -2124,7 +2146,7 @@
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(839, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(906, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2149,11 +2171,54 @@
             this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.загрузитьToolStripMenuItem.Text = "Загрузить";
             // 
+            // dices_amount_textBox
+            // 
+            this.dices_amount_textBox.Location = new System.Drawing.Point(7, 26);
+            this.dices_amount_textBox.Name = "dices_amount_textBox";
+            this.dices_amount_textBox.Size = new System.Drawing.Size(16, 20);
+            this.dices_amount_textBox.TabIndex = 0;
+            // 
+            // dices_value_textBox
+            // 
+            this.dices_value_textBox.Location = new System.Drawing.Point(40, 26);
+            this.dices_value_textBox.Name = "dices_value_textBox";
+            this.dices_value_textBox.Size = new System.Drawing.Size(21, 20);
+            this.dices_value_textBox.TabIndex = 1;
+            // 
+            // dices_label
+            // 
+            this.dices_label.AutoSize = true;
+            this.dices_label.Location = new System.Drawing.Point(26, 29);
+            this.dices_label.Name = "dices_label";
+            this.dices_label.Size = new System.Drawing.Size(13, 13);
+            this.dices_label.TabIndex = 2;
+            this.dices_label.Text = "d";
+            // 
+            // dices_throw_button
+            // 
+            this.dices_throw_button.Location = new System.Drawing.Point(67, 25);
+            this.dices_throw_button.Name = "dices_throw_button";
+            this.dices_throw_button.Size = new System.Drawing.Size(75, 23);
+            this.dices_throw_button.TabIndex = 3;
+            this.dices_throw_button.Text = "Бросить!";
+            this.dices_throw_button.UseVisualStyleBackColor = true;
+            this.dices_throw_button.Click += new System.EventHandler(this.Dices_throw_button_Click);
+            // 
+            // dices_log_textBox
+            // 
+            this.dices_log_textBox.Location = new System.Drawing.Point(7, 60);
+            this.dices_log_textBox.Multiline = true;
+            this.dices_log_textBox.Name = "dices_log_textBox";
+            this.dices_log_textBox.ReadOnly = true;
+            this.dices_log_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dices_log_textBox.Size = new System.Drawing.Size(145, 222);
+            this.dices_log_textBox.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 579);
+            this.ClientSize = new System.Drawing.Size(906, 517);
             this.Controls.Add(this.main_panel);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -2161,6 +2226,8 @@
             this.Text = "d&d helper";
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
+            this.dices_groupBox.ResumeLayout(false);
+            this.dices_groupBox.PerformLayout();
             this.skills_groupBox.ResumeLayout(false);
             this.skills_groupBox.PerformLayout();
             this.hits_groupBox.ResumeLayout(false);
@@ -2374,6 +2441,12 @@
         private System.Windows.Forms.TextBox acrobatics_result_textBox;
         private System.Windows.Forms.Label skillResult_label;
         private System.Windows.Forms.Button submit_button;
+        private System.Windows.Forms.GroupBox dices_groupBox;
+        private System.Windows.Forms.TextBox dices_amount_textBox;
+        private System.Windows.Forms.Label dices_label;
+        private System.Windows.Forms.TextBox dices_value_textBox;
+        private System.Windows.Forms.Button dices_throw_button;
+        private System.Windows.Forms.TextBox dices_log_textBox;
     }
 }
 
