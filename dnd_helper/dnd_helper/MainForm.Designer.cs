@@ -1,6 +1,6 @@
 ﻿namespace dnd_helper
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -30,6 +30,11 @@
         {
             this.main_panel = new System.Windows.Forms.Panel();
             this.dices_groupBox = new System.Windows.Forms.GroupBox();
+            this.dices_log_textBox = new System.Windows.Forms.TextBox();
+            this.dices_throw_button = new System.Windows.Forms.Button();
+            this.dices_label = new System.Windows.Forms.Label();
+            this.dices_value_textBox = new System.Windows.Forms.TextBox();
+            this.dices_amount_textBox = new System.Windows.Forms.TextBox();
             this.submit_button = new System.Windows.Forms.Button();
             this.skills_groupBox = new System.Windows.Forms.GroupBox();
             this.curing_checkBox = new System.Windows.Forms.CheckBox();
@@ -228,11 +233,7 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dices_amount_textBox = new System.Windows.Forms.TextBox();
-            this.dices_value_textBox = new System.Windows.Forms.TextBox();
-            this.dices_label = new System.Windows.Forms.Label();
-            this.dices_throw_button = new System.Windows.Forms.Button();
-            this.dices_log_textBox = new System.Windows.Forms.TextBox();
+            this.снаряжениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.main_panel.SuspendLayout();
             this.dices_groupBox.SuspendLayout();
             this.skills_groupBox.SuspendLayout();
@@ -273,9 +274,52 @@
             this.dices_groupBox.TabStop = false;
             this.dices_groupBox.Text = "Кубики";
             // 
+            // dices_log_textBox
+            // 
+            this.dices_log_textBox.Location = new System.Drawing.Point(7, 60);
+            this.dices_log_textBox.Multiline = true;
+            this.dices_log_textBox.Name = "dices_log_textBox";
+            this.dices_log_textBox.ReadOnly = true;
+            this.dices_log_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dices_log_textBox.Size = new System.Drawing.Size(145, 222);
+            this.dices_log_textBox.TabIndex = 4;
+            // 
+            // dices_throw_button
+            // 
+            this.dices_throw_button.Location = new System.Drawing.Point(67, 25);
+            this.dices_throw_button.Name = "dices_throw_button";
+            this.dices_throw_button.Size = new System.Drawing.Size(75, 23);
+            this.dices_throw_button.TabIndex = 3;
+            this.dices_throw_button.Text = "Бросить!";
+            this.dices_throw_button.UseVisualStyleBackColor = true;
+            this.dices_throw_button.Click += new System.EventHandler(this.Dices_throw_button_Click);
+            // 
+            // dices_label
+            // 
+            this.dices_label.AutoSize = true;
+            this.dices_label.Location = new System.Drawing.Point(26, 29);
+            this.dices_label.Name = "dices_label";
+            this.dices_label.Size = new System.Drawing.Size(13, 13);
+            this.dices_label.TabIndex = 2;
+            this.dices_label.Text = "d";
+            // 
+            // dices_value_textBox
+            // 
+            this.dices_value_textBox.Location = new System.Drawing.Point(40, 26);
+            this.dices_value_textBox.Name = "dices_value_textBox";
+            this.dices_value_textBox.Size = new System.Drawing.Size(21, 20);
+            this.dices_value_textBox.TabIndex = 1;
+            // 
+            // dices_amount_textBox
+            // 
+            this.dices_amount_textBox.Location = new System.Drawing.Point(7, 26);
+            this.dices_amount_textBox.Name = "dices_amount_textBox";
+            this.dices_amount_textBox.Size = new System.Drawing.Size(16, 20);
+            this.dices_amount_textBox.TabIndex = 0;
+            // 
             // submit_button
             // 
-            this.submit_button.Location = new System.Drawing.Point(736, 453);
+            this.submit_button.Location = new System.Drawing.Point(736, 483);
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(75, 23);
             this.submit_button.TabIndex = 5;
@@ -2143,7 +2187,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
+            this.файлToolStripMenuItem,
+            this.снаряжениеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(906, 24);
@@ -2162,57 +2207,21 @@
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.загрузитьToolStripMenuItem.Text = "Загрузить";
             // 
-            // dices_amount_textBox
+            // снаряжениеToolStripMenuItem
             // 
-            this.dices_amount_textBox.Location = new System.Drawing.Point(7, 26);
-            this.dices_amount_textBox.Name = "dices_amount_textBox";
-            this.dices_amount_textBox.Size = new System.Drawing.Size(16, 20);
-            this.dices_amount_textBox.TabIndex = 0;
-            // 
-            // dices_value_textBox
-            // 
-            this.dices_value_textBox.Location = new System.Drawing.Point(40, 26);
-            this.dices_value_textBox.Name = "dices_value_textBox";
-            this.dices_value_textBox.Size = new System.Drawing.Size(21, 20);
-            this.dices_value_textBox.TabIndex = 1;
-            // 
-            // dices_label
-            // 
-            this.dices_label.AutoSize = true;
-            this.dices_label.Location = new System.Drawing.Point(26, 29);
-            this.dices_label.Name = "dices_label";
-            this.dices_label.Size = new System.Drawing.Size(13, 13);
-            this.dices_label.TabIndex = 2;
-            this.dices_label.Text = "d";
-            // 
-            // dices_throw_button
-            // 
-            this.dices_throw_button.Location = new System.Drawing.Point(67, 25);
-            this.dices_throw_button.Name = "dices_throw_button";
-            this.dices_throw_button.Size = new System.Drawing.Size(75, 23);
-            this.dices_throw_button.TabIndex = 3;
-            this.dices_throw_button.Text = "Бросить!";
-            this.dices_throw_button.UseVisualStyleBackColor = true;
-            this.dices_throw_button.Click += new System.EventHandler(this.Dices_throw_button_Click);
-            // 
-            // dices_log_textBox
-            // 
-            this.dices_log_textBox.Location = new System.Drawing.Point(7, 60);
-            this.dices_log_textBox.Multiline = true;
-            this.dices_log_textBox.Name = "dices_log_textBox";
-            this.dices_log_textBox.ReadOnly = true;
-            this.dices_log_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dices_log_textBox.Size = new System.Drawing.Size(145, 222);
-            this.dices_log_textBox.TabIndex = 4;
+            this.снаряжениеToolStripMenuItem.Name = "снаряжениеToolStripMenuItem";
+            this.снаряжениеToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.снаряжениеToolStripMenuItem.Text = "Снаряжение";
+            this.снаряжениеToolStripMenuItem.Click += new System.EventHandler(this.СнаряжениеToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -2447,6 +2456,7 @@
         private System.Windows.Forms.TextBox dices_value_textBox;
         private System.Windows.Forms.Button dices_throw_button;
         private System.Windows.Forms.TextBox dices_log_textBox;
+        private System.Windows.Forms.ToolStripMenuItem снаряжениеToolStripMenuItem;
     }
 }
 

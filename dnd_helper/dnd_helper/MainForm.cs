@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace dnd_helper
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
         }
@@ -61,81 +61,81 @@ namespace dnd_helper
         }
         private void stamina_change()
         {
-            try { 
-            //вычисление mod
-            if (stamina_textBox.Text != "")
-                mod_stamina_textBox.Text = (Convert.ToInt32(stamina_textBox.Text) / 2 - 5).ToString();
-            //вычисление mod + lvl/2
-            int mod;
-            if (mod_stamina_textBox.Text == "")
-                mod = 0;
-            else mod = Convert.ToInt32(mod_stamina_textBox.Text);
-            int lvl_half;
-            if (lvl_textBox.Text == "")
-                lvl_half = 0;
-            else
-                lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
-            mod_lvl_stamina_textBox.Text = (mod + lvl_half).ToString();
+            try {
+                //вычисление mod
+                if (stamina_textBox.Text != "")
+                    mod_stamina_textBox.Text = (Convert.ToInt32(stamina_textBox.Text) / 2 - 5).ToString();
+                //вычисление mod + lvl/2
+                int mod;
+                if (mod_stamina_textBox.Text == "")
+                    mod = 0;
+                else mod = Convert.ToInt32(mod_stamina_textBox.Text);
+                int lvl_half;
+                if (lvl_textBox.Text == "")
+                    lvl_half = 0;
+                else
+                    lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
+                mod_lvl_stamina_textBox.Text = (mod + lvl_half).ToString();
             }
             catch (Exception e) { }
         }
         private void intelligence_change()
         {
-            try { 
-            //вычисление mod
-            if (intelligence_textBox.Text != "")
-                mod_intelligence_textBox.Text = (Convert.ToInt32(intelligence_textBox.Text) / 2 - 5).ToString();
-            //вычисление mod + lvl/2
-            int mod;
-            if (mod_intelligence_textBox.Text == "")
-                mod = 0;
-            else mod = Convert.ToInt32(mod_intelligence_textBox.Text);
-            int lvl_half;
-            if (lvl_textBox.Text == "")
-                lvl_half = 0;
-            else
-                lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
-            mod_lvl_intelligence_textBox.Text = (mod + lvl_half).ToString();
+            try {
+                //вычисление mod
+                if (intelligence_textBox.Text != "")
+                    mod_intelligence_textBox.Text = (Convert.ToInt32(intelligence_textBox.Text) / 2 - 5).ToString();
+                //вычисление mod + lvl/2
+                int mod;
+                if (mod_intelligence_textBox.Text == "")
+                    mod = 0;
+                else mod = Convert.ToInt32(mod_intelligence_textBox.Text);
+                int lvl_half;
+                if (lvl_textBox.Text == "")
+                    lvl_half = 0;
+                else
+                    lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
+                mod_lvl_intelligence_textBox.Text = (mod + lvl_half).ToString();
             }
             catch (Exception e) { }
         }
         private void wizdom_change()
         {
-            try { 
-            //вычисление mod
-            if (wizdom_textBox.Text != "")
-                mod_wizdom_textBox.Text = (Convert.ToInt32(wizdom_textBox.Text) / 2 - 5).ToString();
-            //вычисление mod + lvl/2
-            int mod;
-            if (mod_wizdom_textBox.Text == "")
-                mod = 0;
-            else mod = Convert.ToInt32(mod_wizdom_textBox.Text);
-            int lvl_half;
-            if (lvl_textBox.Text == "")
-                lvl_half = 0;
-            else
-                lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
-            mod_lvl_wizdom_textBox.Text = (mod + lvl_half).ToString();
+            try {
+                //вычисление mod
+                if (wizdom_textBox.Text != "")
+                    mod_wizdom_textBox.Text = (Convert.ToInt32(wizdom_textBox.Text) / 2 - 5).ToString();
+                //вычисление mod + lvl/2
+                int mod;
+                if (mod_wizdom_textBox.Text == "")
+                    mod = 0;
+                else mod = Convert.ToInt32(mod_wizdom_textBox.Text);
+                int lvl_half;
+                if (lvl_textBox.Text == "")
+                    lvl_half = 0;
+                else
+                    lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
+                mod_lvl_wizdom_textBox.Text = (mod + lvl_half).ToString();
             }
             catch (Exception e) { }
         }
         private void charisma_change()
         {
-            try { 
-            //вычисление mod
-            if (charisma_textBox.Text != "")
-                mod_charisma_textBox.Text = (Convert.ToInt32(charisma_textBox.Text) / 2 - 5).ToString();
-            //вычисление mod + lvl/2
-            int mod;
-            if (mod_charisma_textBox.Text == "")
-                mod = 0;
-            else mod = Convert.ToInt32(mod_charisma_textBox.Text);
-            int lvl_half;
-            if (lvl_textBox.Text == "")
-                lvl_half = 0;
-            else
-                lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
-            mod_lvl_charisma_textBox.Text = (mod + lvl_half).ToString();
+            try {
+                //вычисление mod
+                if (charisma_textBox.Text != "")
+                    mod_charisma_textBox.Text = (Convert.ToInt32(charisma_textBox.Text) / 2 - 5).ToString();
+                //вычисление mod + lvl/2
+                int mod;
+                if (mod_charisma_textBox.Text == "")
+                    mod = 0;
+                else mod = Convert.ToInt32(mod_charisma_textBox.Text);
+                int lvl_half;
+                if (lvl_textBox.Text == "")
+                    lvl_half = 0;
+                else
+                    lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
+                mod_lvl_charisma_textBox.Text = (mod + lvl_half).ToString();
             }
             catch (Exception e) { }
         }
@@ -175,156 +175,156 @@ namespace dnd_helper
         }
         private void athletics_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (athletics_textBox.Text != "")
-                bonus = Convert.ToInt32(athletics_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (athletics_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление штрафа за доспех
-            int armorFine;
-            if (athletics_armorFine_textBox.Text != "")
-                armorFine = Convert.ToInt32(athletics_armorFine_textBox.Text);
-            else armorFine = 0;
-            //вычисление иного
-            int other;
-            if (athletics_other_textBox.Text != "")
-                other = Convert.ToInt32(athletics_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (athletics_mod_textBox.Text != "")
-                mod = Convert.ToInt32(athletics_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            athletics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (athletics_textBox.Text != "")
+                    bonus = Convert.ToInt32(athletics_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (athletics_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление штрафа за доспех
+                int armorFine;
+                if (athletics_armorFine_textBox.Text != "")
+                    armorFine = Convert.ToInt32(athletics_armorFine_textBox.Text);
+                else armorFine = 0;
+                //вычисление иного
+                int other;
+                if (athletics_other_textBox.Text != "")
+                    other = Convert.ToInt32(athletics_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (athletics_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(athletics_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                athletics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
             catch (Exception e) { }
         }
         private void attentiveness_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (attentiveness_textBox.Text != "")
-                bonus = Convert.ToInt32(attentiveness_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (attentiveness_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (attentiveness_other_textBox.Text != "")
-                other = Convert.ToInt32(attentiveness_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (attentiveness_mod_textBox.Text != "")
-                mod = Convert.ToInt32(attentiveness_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            attentiveness_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (attentiveness_textBox.Text != "")
+                    bonus = Convert.ToInt32(attentiveness_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (attentiveness_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (attentiveness_other_textBox.Text != "")
+                    other = Convert.ToInt32(attentiveness_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (attentiveness_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(attentiveness_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                attentiveness_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void steal_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (steal_textBox.Text != "")
-                bonus = Convert.ToInt32(steal_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (steal_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление штрафа за доспех
-            int armorFine;
-            if (steal_armorFine_textBox.Text != "")
-                armorFine = Convert.ToInt32(steal_armorFine_textBox.Text);
-            else armorFine = 0;
-            //вычисление иного
-            int other;
-            if (steal_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (steal_mod_textBox.Text != "")
-                mod = Convert.ToInt32(steal_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            steal_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (steal_textBox.Text != "")
+                    bonus = Convert.ToInt32(steal_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (steal_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление штрафа за доспех
+                int armorFine;
+                if (steal_armorFine_textBox.Text != "")
+                    armorFine = Convert.ToInt32(steal_armorFine_textBox.Text);
+                else armorFine = 0;
+                //вычисление иного
+                int other;
+                if (steal_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (steal_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(steal_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                steal_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
             catch (Exception e) { }
         }
         private void endurance_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (endurance_textBox.Text != "")
-                bonus = Convert.ToInt32(endurance_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (endurance_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление штрафа за доспех
-            int armorFine;
-            if (endurance_armorFine_textBox.Text != "")
-                armorFine = Convert.ToInt32(endurance_armorFine_textBox.Text);
-            else armorFine = 0;
-            //вычисление иного
-            int other;
-            if (endurance_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (endurance_mod_textBox.Text != "")
-                mod = Convert.ToInt32(endurance_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            endurance_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (endurance_textBox.Text != "")
+                    bonus = Convert.ToInt32(endurance_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (endurance_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление штрафа за доспех
+                int armorFine;
+                if (endurance_armorFine_textBox.Text != "")
+                    armorFine = Convert.ToInt32(endurance_armorFine_textBox.Text);
+                else armorFine = 0;
+                //вычисление иного
+                int other;
+                if (endurance_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (endurance_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(endurance_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                endurance_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
             catch (Exception e) { }
         }
         private void terrifying_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (terrifying_textBox.Text != "")
-                bonus = Convert.ToInt32(terrifying_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (terrifying_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (terrifying_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (terrifying_mod_textBox.Text != "")
-                mod = Convert.ToInt32(terrifying_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            terrifying_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (terrifying_textBox.Text != "")
+                    bonus = Convert.ToInt32(terrifying_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (terrifying_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (terrifying_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (terrifying_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(terrifying_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                terrifying_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
@@ -359,294 +359,294 @@ namespace dnd_helper
         }
         private void history_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (history_textBox.Text != "")
-                bonus = Convert.ToInt32(history_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (history_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (history_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (history_mod_textBox.Text != "")
-                mod = Convert.ToInt32(history_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            history_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (history_textBox.Text != "")
+                    bonus = Convert.ToInt32(history_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (history_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (history_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (history_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(history_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                history_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void magic_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (magic_textBox.Text != "")
-                bonus = Convert.ToInt32(magic_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (magic_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (magic_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (magic_mod_textBox.Text != "")
-                mod = Convert.ToInt32(magic_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            magic_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (magic_textBox.Text != "")
+                    bonus = Convert.ToInt32(magic_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (magic_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (magic_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (magic_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(magic_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                magic_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void cheating_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (cheating_textBox.Text != "")
-                bonus = Convert.ToInt32(cheating_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (cheating_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (cheating_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (cheating_mod_textBox.Text != "")
-                mod = Convert.ToInt32(cheating_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            cheating_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (cheating_textBox.Text != "")
+                    bonus = Convert.ToInt32(cheating_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (cheating_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (cheating_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (cheating_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(cheating_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                cheating_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void discussion_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (discussion_textBox.Text != "")
-                bonus = Convert.ToInt32(discussion_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (discussion_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (discussion_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (discussion_mod_textBox.Text != "")
-                mod = Convert.ToInt32(discussion_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            discussion_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (discussion_textBox.Text != "")
+                    bonus = Convert.ToInt32(discussion_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (discussion_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (discussion_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (discussion_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(discussion_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                discussion_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void dungeons_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (dungeons_textBox.Text != "")
-                bonus = Convert.ToInt32(dungeons_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (dungeons_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (dungeons_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (dungeons_mod_textBox.Text != "")
-                mod = Convert.ToInt32(dungeons_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            dungeons_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (dungeons_textBox.Text != "")
+                    bonus = Convert.ToInt32(dungeons_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (dungeons_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (dungeons_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (dungeons_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(dungeons_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                dungeons_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void nature_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (nature_textBox.Text != "")
-                bonus = Convert.ToInt32(nature_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (nature_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (nature_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (nature_mod_textBox.Text != "")
-                mod = Convert.ToInt32(nature_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            nature_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (nature_textBox.Text != "")
+                    bonus = Convert.ToInt32(nature_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (nature_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (nature_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (nature_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(nature_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                nature_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void insight_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (insight_textBox.Text != "")
-                bonus = Convert.ToInt32(insight_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (insight_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (insight_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (insight_mod_textBox.Text != "")
-                mod = Convert.ToInt32(insight_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            insight_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (insight_textBox.Text != "")
+                    bonus = Convert.ToInt32(insight_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (insight_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (insight_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (insight_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(insight_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                insight_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void religion_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (religion_textBox.Text != "")
-                bonus = Convert.ToInt32(religion_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (religion_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (religion_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (religion_mod_textBox.Text != "")
-                mod = Convert.ToInt32(religion_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            religion_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (religion_textBox.Text != "")
+                    bonus = Convert.ToInt32(religion_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (religion_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (religion_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (religion_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(religion_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                religion_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void stealth_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (stealth_textBox.Text != "")
-                bonus = Convert.ToInt32(stealth_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (stealth_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление штрафа за доспех
-            int armorFine;
-            if (stealth_armorFine_textBox.Text != "")
-                armorFine = Convert.ToInt32(stealth_armorFine_textBox.Text);
-            else armorFine = 0;
-            //вычисление иного
-            int other;
-            if (stealth_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (stealth_mod_textBox.Text != "")
-                mod = Convert.ToInt32(stealth_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            stealth_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (stealth_textBox.Text != "")
+                    bonus = Convert.ToInt32(stealth_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (stealth_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление штрафа за доспех
+                int armorFine;
+                if (stealth_armorFine_textBox.Text != "")
+                    armorFine = Convert.ToInt32(stealth_armorFine_textBox.Text);
+                else armorFine = 0;
+                //вычисление иного
+                int other;
+                if (stealth_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (stealth_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(stealth_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                stealth_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
             catch (Exception e) { }
         }
         private void curing_change()
         {
-            try { 
-            //вычисление бонуса
-            int bonus;
-            if (curing_textBox.Text != "")
-                bonus = Convert.ToInt32(curing_textBox.Text);
-            else bonus = 0;
-            //вычисление тренированности
-            int trained;
-            if (curing_checkBox.Checked)
-                trained = 5;
-            else trained = 0;
-            //вычисление иного
-            int other;
-            if (curing_other_textBox.Text != "")
-                other = Convert.ToInt32(steal_other_textBox.Text);
-            else other = 0;
-            //вычисление модификатора
-            int mod;
-            if (curing_mod_textBox.Text != "")
-                mod = Convert.ToInt32(curing_mod_textBox.Text);
-            else mod = 0;
-            //вычисление результата
-            curing_result_textBox.Text = (bonus + mod + trained + other).ToString();
+            try {
+                //вычисление бонуса
+                int bonus;
+                if (curing_textBox.Text != "")
+                    bonus = Convert.ToInt32(curing_textBox.Text);
+                else bonus = 0;
+                //вычисление тренированности
+                int trained;
+                if (curing_checkBox.Checked)
+                    trained = 5;
+                else trained = 0;
+                //вычисление иного
+                int other;
+                if (curing_other_textBox.Text != "")
+                    other = Convert.ToInt32(steal_other_textBox.Text);
+                else other = 0;
+                //вычисление модификатора
+                int mod;
+                if (curing_mod_textBox.Text != "")
+                    mod = Convert.ToInt32(curing_mod_textBox.Text);
+                else mod = 0;
+                //вычисление результата
+                curing_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
             catch (Exception e) { }
         }
         private void wounded_change()
         {
-            try { 
-            if (maxHits_textBox.Text != "")
-                wounded_textBox.Text = (Convert.ToInt32(maxHits_textBox.Text) / 2).ToString();
+            try {
+                if (maxHits_textBox.Text != "")
+                    wounded_textBox.Text = (Convert.ToInt32(maxHits_textBox.Text) / 2).ToString();
             }
             catch (Exception e) { }
         }
@@ -1158,5 +1158,19 @@ namespace dnd_helper
             }
             catch (Exception error) { }
         }
+        private void СнаряжениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackPack.Show();
+        }
     }
+    /*
+    public partial class BackPackClass : Form
+    {
+        Form BackPack;
+        public BackPackClass()
+        {
+            //InitializeComponent();
+        }
+    }
+    */
 }
