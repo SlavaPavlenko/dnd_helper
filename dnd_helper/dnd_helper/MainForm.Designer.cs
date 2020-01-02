@@ -202,10 +202,10 @@
             this.mod_lvl_charisma_textBox = new System.Windows.Forms.TextBox();
             this.mod_charisma_textBox = new System.Windows.Forms.TextBox();
             this.charisma_textBox = new System.Windows.Forms.TextBox();
-            this.wizdom_label = new System.Windows.Forms.Label();
-            this.mod_lvl_wizdom_textBox = new System.Windows.Forms.TextBox();
-            this.mod_wizdom_textBox = new System.Windows.Forms.TextBox();
-            this.wizdom_textBox = new System.Windows.Forms.TextBox();
+            this.wisdom_label = new System.Windows.Forms.Label();
+            this.mod_lvl_wisdom_textBox = new System.Windows.Forms.TextBox();
+            this.mod_wisdom_textBox = new System.Windows.Forms.TextBox();
+            this.wisdom_textBox = new System.Windows.Forms.TextBox();
             this.intelligence_label = new System.Windows.Forms.Label();
             this.mod_lvl_intelligence_textBox = new System.Windows.Forms.TextBox();
             this.mod_intelligence_textBox = new System.Windows.Forms.TextBox();
@@ -234,6 +234,7 @@
             this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.снаряжениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.талантыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.main_panel.SuspendLayout();
             this.dices_groupBox.SuspendLayout();
             this.skills_groupBox.SuspendLayout();
@@ -1876,10 +1877,10 @@
             this.stats_groupBox.Controls.Add(this.mod_lvl_charisma_textBox);
             this.stats_groupBox.Controls.Add(this.mod_charisma_textBox);
             this.stats_groupBox.Controls.Add(this.charisma_textBox);
-            this.stats_groupBox.Controls.Add(this.wizdom_label);
-            this.stats_groupBox.Controls.Add(this.mod_lvl_wizdom_textBox);
-            this.stats_groupBox.Controls.Add(this.mod_wizdom_textBox);
-            this.stats_groupBox.Controls.Add(this.wizdom_textBox);
+            this.stats_groupBox.Controls.Add(this.wisdom_label);
+            this.stats_groupBox.Controls.Add(this.mod_lvl_wisdom_textBox);
+            this.stats_groupBox.Controls.Add(this.mod_wisdom_textBox);
+            this.stats_groupBox.Controls.Add(this.wisdom_textBox);
             this.stats_groupBox.Controls.Add(this.intelligence_label);
             this.stats_groupBox.Controls.Add(this.mod_lvl_intelligence_textBox);
             this.stats_groupBox.Controls.Add(this.mod_intelligence_textBox);
@@ -1942,41 +1943,41 @@
             this.charisma_textBox.TabIndex = 22;
             this.charisma_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.charisma_textBox_KeyPress);
             // 
-            // wizdom_label
+            // wisdom_label
             // 
-            this.wizdom_label.AutoSize = true;
-            this.wizdom_label.Location = new System.Drawing.Point(49, 139);
-            this.wizdom_label.Name = "wizdom_label";
-            this.wizdom_label.Size = new System.Drawing.Size(56, 13);
-            this.wizdom_label.TabIndex = 15;
-            this.wizdom_label.Text = "Мудрость";
-            this.wizdom_label.MouseEnter += new System.EventHandler(this.wizdom_label_MouseEnter);
-            this.wizdom_label.MouseLeave += new System.EventHandler(this.wizdom_label_MouseLeave);
+            this.wisdom_label.AutoSize = true;
+            this.wisdom_label.Location = new System.Drawing.Point(49, 139);
+            this.wisdom_label.Name = "wisdom_label";
+            this.wisdom_label.Size = new System.Drawing.Size(56, 13);
+            this.wisdom_label.TabIndex = 15;
+            this.wisdom_label.Text = "Мудрость";
+            this.wisdom_label.MouseEnter += new System.EventHandler(this.wizdom_label_MouseEnter);
+            this.wisdom_label.MouseLeave += new System.EventHandler(this.wizdom_label_MouseLeave);
             // 
-            // mod_lvl_wizdom_textBox
+            // mod_lvl_wisdom_textBox
             // 
-            this.mod_lvl_wizdom_textBox.Enabled = false;
-            this.mod_lvl_wizdom_textBox.Location = new System.Drawing.Point(182, 136);
-            this.mod_lvl_wizdom_textBox.Name = "mod_lvl_wizdom_textBox";
-            this.mod_lvl_wizdom_textBox.Size = new System.Drawing.Size(73, 20);
-            this.mod_lvl_wizdom_textBox.TabIndex = 16;
+            this.mod_lvl_wisdom_textBox.Enabled = false;
+            this.mod_lvl_wisdom_textBox.Location = new System.Drawing.Point(182, 136);
+            this.mod_lvl_wisdom_textBox.Name = "mod_lvl_wisdom_textBox";
+            this.mod_lvl_wisdom_textBox.Size = new System.Drawing.Size(73, 20);
+            this.mod_lvl_wisdom_textBox.TabIndex = 16;
             // 
-            // mod_wizdom_textBox
+            // mod_wisdom_textBox
             // 
-            this.mod_wizdom_textBox.Enabled = false;
-            this.mod_wizdom_textBox.Location = new System.Drawing.Point(136, 136);
-            this.mod_wizdom_textBox.Name = "mod_wizdom_textBox";
-            this.mod_wizdom_textBox.Size = new System.Drawing.Size(31, 20);
-            this.mod_wizdom_textBox.TabIndex = 17;
+            this.mod_wisdom_textBox.Enabled = false;
+            this.mod_wisdom_textBox.Location = new System.Drawing.Point(136, 136);
+            this.mod_wisdom_textBox.Name = "mod_wisdom_textBox";
+            this.mod_wisdom_textBox.Size = new System.Drawing.Size(31, 20);
+            this.mod_wisdom_textBox.TabIndex = 17;
             // 
-            // wizdom_textBox
+            // wisdom_textBox
             // 
-            this.wizdom_textBox.Location = new System.Drawing.Point(11, 136);
-            this.wizdom_textBox.MaxLength = 3;
-            this.wizdom_textBox.Name = "wizdom_textBox";
-            this.wizdom_textBox.Size = new System.Drawing.Size(31, 20);
-            this.wizdom_textBox.TabIndex = 18;
-            this.wizdom_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.wizdom_textBox_KeyPress);
+            this.wisdom_textBox.Location = new System.Drawing.Point(11, 136);
+            this.wisdom_textBox.MaxLength = 3;
+            this.wisdom_textBox.Name = "wisdom_textBox";
+            this.wisdom_textBox.Size = new System.Drawing.Size(31, 20);
+            this.wisdom_textBox.TabIndex = 18;
+            this.wisdom_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.wizdom_textBox_KeyPress);
             // 
             // intelligence_label
             // 
@@ -2188,7 +2189,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.снаряжениеToolStripMenuItem});
+            this.снаряжениеToolStripMenuItem,
+            this.талантыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(906, 24);
@@ -2207,13 +2209,13 @@
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.загрузитьToolStripMenuItem.Text = "Загрузить";
             // 
             // снаряжениеToolStripMenuItem
@@ -2223,7 +2225,14 @@
             this.снаряжениеToolStripMenuItem.Text = "Снаряжение";
             this.снаряжениеToolStripMenuItem.Click += new System.EventHandler(this.СнаряжениеToolStripMenuItem_Click);
             // 
-            // Form1
+            // талантыToolStripMenuItem
+            // 
+            this.талантыToolStripMenuItem.Name = "талантыToolStripMenuItem";
+            this.талантыToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.талантыToolStripMenuItem.Text = "Таланты";
+            this.талантыToolStripMenuItem.Click += new System.EventHandler(this.талантыToolStripMenuItem_Click);
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -2231,8 +2240,9 @@
             this.Controls.Add(this.main_panel);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.Text = "d&d helper";
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
             this.dices_groupBox.ResumeLayout(false);
@@ -2271,10 +2281,10 @@
         private System.Windows.Forms.TextBox mod_lvl_charisma_textBox;
         private System.Windows.Forms.TextBox mod_charisma_textBox;
         private System.Windows.Forms.TextBox charisma_textBox;
-        private System.Windows.Forms.Label wizdom_label;
-        private System.Windows.Forms.TextBox mod_lvl_wizdom_textBox;
-        private System.Windows.Forms.TextBox mod_wizdom_textBox;
-        private System.Windows.Forms.TextBox wizdom_textBox;
+        private System.Windows.Forms.Label wisdom_label;
+        private System.Windows.Forms.TextBox mod_lvl_wisdom_textBox;
+        private System.Windows.Forms.TextBox mod_wisdom_textBox;
+        private System.Windows.Forms.TextBox wisdom_textBox;
         private System.Windows.Forms.Label intelligence_label;
         private System.Windows.Forms.TextBox mod_lvl_intelligence_textBox;
         private System.Windows.Forms.TextBox mod_intelligence_textBox;
@@ -2457,6 +2467,7 @@
         private System.Windows.Forms.Button dices_throw_button;
         private System.Windows.Forms.TextBox dices_log_textBox;
         private System.Windows.Forms.ToolStripMenuItem снаряжениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem талантыToolStripMenuItem;
     }
 }
 

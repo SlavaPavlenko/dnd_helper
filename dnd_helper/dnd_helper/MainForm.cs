@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Media;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dnd_helper
@@ -36,7 +31,7 @@ namespace dnd_helper
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
                 mod_lvl_strange_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void agility_change()
         {
@@ -57,7 +52,7 @@ namespace dnd_helper
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
                 mod_lvl_agility_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void stamina_change()
         {
@@ -77,7 +72,7 @@ namespace dnd_helper
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
                 mod_lvl_stamina_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void intelligence_change()
         {
@@ -97,27 +92,27 @@ namespace dnd_helper
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
                 mod_lvl_intelligence_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void wizdom_change()
         {
             try {
                 //вычисление mod
-                if (wizdom_textBox.Text != "")
-                    mod_wizdom_textBox.Text = (Convert.ToInt32(wizdom_textBox.Text) / 2 - 5).ToString();
+                if (wisdom_textBox.Text != "")
+                    mod_wisdom_textBox.Text = (Convert.ToInt32(wisdom_textBox.Text) / 2 - 5).ToString();
                 //вычисление mod + lvl/2
                 int mod;
-                if (mod_wizdom_textBox.Text == "")
+                if (mod_wisdom_textBox.Text == "")
                     mod = 0;
-                else mod = Convert.ToInt32(mod_wizdom_textBox.Text);
+                else mod = Convert.ToInt32(mod_wisdom_textBox.Text);
                 int lvl_half;
                 if (lvl_textBox.Text == "")
                     lvl_half = 0;
                 else
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
-                mod_lvl_wizdom_textBox.Text = (mod + lvl_half).ToString();
+                mod_lvl_wisdom_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void charisma_change()
         {
@@ -137,7 +132,7 @@ namespace dnd_helper
                     lvl_half = Convert.ToInt32(lvl_textBox.Text) / 2;
                 mod_lvl_charisma_textBox.Text = (mod + lvl_half).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void acrobatics_change()
         {
@@ -171,7 +166,7 @@ namespace dnd_helper
                 //вычисление результата
                 acrobatics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void athletics_change()
         {
@@ -204,7 +199,7 @@ namespace dnd_helper
                 //вычисление результата
                 athletics_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void attentiveness_change()
         {
@@ -232,7 +227,7 @@ namespace dnd_helper
                 //вычисление результата
                 attentiveness_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void steal_change()
         {
@@ -265,7 +260,7 @@ namespace dnd_helper
                 //вычисление результата
                 steal_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void endurance_change()
         {
@@ -298,7 +293,7 @@ namespace dnd_helper
                 //вычисление результата
                 endurance_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void terrifying_change()
         {
@@ -326,7 +321,7 @@ namespace dnd_helper
                 //вычисление результата
                 terrifying_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void streetKnowlage_change()
         {
@@ -355,7 +350,7 @@ namespace dnd_helper
                 //вычисление результата
                 streetKnowlage_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void history_change()
         {
@@ -383,7 +378,7 @@ namespace dnd_helper
                 //вычисление результата
                 history_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void magic_change()
         {
@@ -411,7 +406,7 @@ namespace dnd_helper
                 //вычисление результата
                 magic_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void cheating_change()
         {
@@ -439,7 +434,7 @@ namespace dnd_helper
                 //вычисление результата
                 cheating_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void discussion_change()
         {
@@ -467,7 +462,7 @@ namespace dnd_helper
                 //вычисление результата
                 discussion_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void dungeons_change()
         {
@@ -495,7 +490,7 @@ namespace dnd_helper
                 //вычисление результата
                 dungeons_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void nature_change()
         {
@@ -523,7 +518,7 @@ namespace dnd_helper
                 //вычисление результата
                 nature_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void insight_change()
         {
@@ -551,7 +546,7 @@ namespace dnd_helper
                 //вычисление результата
                 insight_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void religion_change()
         {
@@ -579,7 +574,7 @@ namespace dnd_helper
                 //вычисление результата
                 religion_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void stealth_change()
         {
@@ -612,7 +607,7 @@ namespace dnd_helper
                 //вычисление результата
                 stealth_result_textBox.Text = (bonus + mod + trained + armorFine + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void curing_change()
         {
@@ -640,7 +635,7 @@ namespace dnd_helper
                 //вычисление результата
                 curing_result_textBox.Text = (bonus + mod + trained + other).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void wounded_change()
         {
@@ -648,7 +643,7 @@ namespace dnd_helper
                 if (maxHits_textBox.Text != "")
                     wounded_textBox.Text = (Convert.ToInt32(maxHits_textBox.Text) / 2).ToString();
             }
-            catch (Exception e) { }
+            catch (Exception) { }
         }
         private void submit_button_Click(object sender, EventArgs e)
         {
@@ -661,7 +656,7 @@ namespace dnd_helper
             //копирование мод. + 1/2 ур.
             acrobatics_mod_textBox.Text = mod_lvl_agility_textBox.Text;
             athletics_mod_textBox.Text = mod_lvl_strange_textBox.Text;
-            attentiveness_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+            attentiveness_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
             steal_mod_textBox.Text = mod_lvl_agility_textBox.Text;
             endurance_mod_textBox.Text = mod_lvl_stamina_textBox.Text;
             terrifying_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
@@ -670,12 +665,12 @@ namespace dnd_helper
             magic_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
             cheating_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
             discussion_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
-            dungeons_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
-            nature_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
-            insight_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+            dungeons_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
+            nature_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
+            insight_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
             religion_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
             stealth_mod_textBox.Text = mod_lvl_agility_textBox.Text;
-            curing_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+            curing_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
             //навыки
             acrobatics_change();
             athletics_change();
@@ -758,7 +753,7 @@ namespace dnd_helper
         private void wizdom_hilight_on()
         {
             Color color = Color.Yellow;
-            wizdom_label.BackColor = color;
+            wisdom_label.BackColor = color;
             attentiveness_label.BackColor = color;
             dungeons_label.BackColor = color;
             nature_label.BackColor = color;
@@ -768,7 +763,7 @@ namespace dnd_helper
         private void wizdom_hilight_off()
         {
             Color color = Color.Empty;
-            wizdom_label.BackColor = color;
+            wisdom_label.BackColor = color;
             attentiveness_label.BackColor = color;
             dungeons_label.BackColor = color;
             nature_label.BackColor = color;
@@ -924,7 +919,7 @@ namespace dnd_helper
                 //копирование мод. + 1/2 ур.
                 acrobatics_mod_textBox.Text = mod_lvl_agility_textBox.Text;
                 athletics_mod_textBox.Text = mod_lvl_strange_textBox.Text;
-                attentiveness_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                attentiveness_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
                 steal_mod_textBox.Text = mod_lvl_agility_textBox.Text;
                 endurance_mod_textBox.Text = mod_lvl_stamina_textBox.Text;
                 terrifying_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
@@ -933,12 +928,12 @@ namespace dnd_helper
                 magic_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
                 cheating_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
                 discussion_mod_textBox.Text = mod_lvl_charisma_textBox.Text;
-                dungeons_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
-                nature_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
-                insight_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                dungeons_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
+                nature_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
+                insight_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
                 religion_mod_textBox.Text = mod_lvl_intelligence_textBox.Text;
                 stealth_mod_textBox.Text = mod_lvl_agility_textBox.Text;
-                curing_mod_textBox.Text = mod_lvl_wizdom_textBox.Text;
+                curing_mod_textBox.Text = mod_lvl_wisdom_textBox.Text;
 
                 acrobatics_change();
                 athletics_change();
@@ -1125,11 +1120,11 @@ namespace dnd_helper
             }
         }
 
+        //Бросок дайсов
         private void Dices_throw_button_Click(object sender, EventArgs e)
         {
             try
             {
-                int res = 0;
                 int[] values = new int[Convert.ToInt32(dices_amount_textBox.Text)];
                 Random random = new Random();
                 for (int i = 0; i < Convert.ToInt32(dices_amount_textBox.Text); i++)
@@ -1156,21 +1151,37 @@ namespace dnd_helper
                 dices_log_textBox.SelectionStart = 0;
                 dices_log_textBox.ScrollToCaret();
             }
-            catch (Exception error) { }
+            catch (Exception) { }
         }
+
+        //Снаряжение
+        MyBackpack backpackForm = new MyBackpack();
         private void СнаряжениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BackPack.Show();
+            if (!backpackForm.Created)
+                backpackForm = new MyBackpack();
+            backpackForm.Show();
+            backpackForm.BringToFront();
         }
-    }
-    /*
-    public partial class BackPackClass : Form
-    {
-        Form BackPack;
-        public BackPackClass()
+
+
+        //Таланты
+        MyTalents talentsForm = new MyTalents();
+        private void талантыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //InitializeComponent();
+            if (!talentsForm.Created)
+                talentsForm = new MyTalents();
+            talentsForm.Show();
+            talentsForm.BringToFront();
+        }
+        //Добавление талантов в лист
+        public static List<Talent> allTalents = new List<Talent>();
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            allTalents.Add(new Talent("Искусный удар", 1, "Последний выпад ставит вас в выгодное положение", "Неограниченный", "Воинский, Оружие",
+                "Стандартное действие", "Рукопашное или Дальнобойное оружие", "Вы должны использовать арбалет, легкий клинок или пращу", "Одно существо",
+                "Вы можете переместиться на 2 клетки до совершения атаки", "Ловкость против КД", "Урон 1[Ор] + модификатор Ловкости", "", "",
+                "На 21 уровне урон увеличивается до 2[Ор] + модификатор Ловкости"));
         }
     }
-    */
 }

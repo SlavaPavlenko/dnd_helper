@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackPack.cs">
+    <Compile Include="MyBackpack.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackPack.Designer.cs">
-      <DependentUpon>BackPack.cs</DependentUpon>
+    <Compile Include="MyBackpack.Designer.cs">
+      <DependentUpon>MyBackpack.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -60,8 +60,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BackPack.resx">
-      <DependentUpon>BackPack.cs</DependentUpon>
+    <Compile Include="Talent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talent.Designer.cs">
+      <DependentUpon>Talent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalentList.Designer.cs">
+      <DependentUpon>TalentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTalents.Designer.cs">
+      <DependentUpon>MyTalents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyBackpack.resx">
+      <DependentUpon>MyBackpack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -75,6 +93,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Talent.resx">
+      <DependentUpon>Talent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalentList.resx">
+      <DependentUpon>TalentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTalents.resx">
+      <DependentUpon>MyTalents.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
