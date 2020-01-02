@@ -645,6 +645,15 @@ namespace dnd_helper
             }
             catch (Exception) { }
         }
+        private void healingValue_change()
+        {
+            try
+            {
+                if (maxHits_textBox.Text != "")
+                    healing_value_textBox.Text = (Convert.ToInt32(maxHits_textBox.Text) / 4).ToString();
+            }
+            catch (Exception) { }
+        }
         private void submit_button_Click(object sender, EventArgs e)
         {
             strange_change();
@@ -689,7 +698,8 @@ namespace dnd_helper
             religion_change();
             stealth_change();
             curing_change();
-            //ранение
+            //хиты
+            healingValue_change();
             wounded_change();
         }
 
@@ -1164,7 +1174,6 @@ namespace dnd_helper
             backpackForm.BringToFront();
         }
 
-
         //Таланты
         MyTalents talentsForm = new MyTalents();
         private void талантыToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1178,10 +1187,17 @@ namespace dnd_helper
         public static List<Talent> allTalents = new List<Talent>();
         private void mainForm_Load(object sender, EventArgs e)
         {
-            allTalents.Add(new Talent("Искусный удар", 1, "Последний выпад ставит вас в выгодное положение", "Неограниченный", "Воинский, Оружие",
-                "Стандартное действие", "Рукопашное или Дальнобойное оружие", "Вы должны использовать арбалет, легкий клинок или пращу", "Одно существо",
-                "Вы можете переместиться на 2 клетки до совершения атаки", "Ловкость против КД", "Урон 1[Ор] + модификатор Ловкости", "", "",
-                "На 21 уровне урон увеличивается до 2[Ор] + модификатор Ловкости"));
+            Import.talentsImport();
+        }
+
+        //Импорт
+        Import importForm = new Import();
+        private void импортToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!importForm.Created)
+                importForm = new Import();
+            importForm.Show();
+            importForm.BringToFront();
         }
     }
 }

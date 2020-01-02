@@ -22,3 +22,4 @@ C:\Users\SunRay\Documents\dnd_helper\dnd_helper\dnd_helper\obj\Debug\dnd_helper.
 C:\Users\SunRay\Documents\dnd_helper\dnd_helper\dnd_helper\obj\Debug\dnd_helper.Talent.resources
 C:\Users\SunRay\Documents\dnd_helper\dnd_helper\dnd_helper\obj\Debug\dnd_helper.TalentList.resources
 C:\Users\SunRay\Documents\dnd_helper\dnd_helper\dnd_helper\obj\Debug\dnd_helper.MyTalents.resources
+C:\Users\SunRay\Documents\dnd_helper\dnd_helper\dnd_helper\obj\Debug\dnd_helper.Import.resources

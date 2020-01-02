@@ -1789,6 +1789,7 @@
             // 
             // healing_value_textBox
             // 
+            this.healing_value_textBox.Enabled = false;
             this.healing_value_textBox.Location = new System.Drawing.Point(149, 40);
             this.healing_value_textBox.Name = "healing_value_textBox";
             this.healing_value_textBox.Size = new System.Drawing.Size(36, 20);
@@ -2209,14 +2210,15 @@
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Text = "Импорт";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.импортToolStripMenuItem_Click);
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.загрузитьToolStripMenuItem.Text = "Загрузить";
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Text = "Экспорт";
             // 
             // снаряжениеToolStripMenuItem
             // 

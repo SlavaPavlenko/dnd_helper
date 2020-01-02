@@ -46,6 +46,25 @@ namespace dnd_helper
             LvlUpgrades = lvlUpgrades;
         }
 
+        public Talent(string[] values)
+        {
+            TalentName = values[0];
+            Level = Convert.ToInt32(values[1]);
+            Description = values[2];
+            UsageRate = values[3];
+            KeyWords = values[4];
+            ActionType = values[5];
+            Required = values[6];
+            Condition = values[7];
+            Target = values[8];
+            Feature = values[9];
+            Attack = values[10];
+            Hit = values[11];
+            Miss = values[12];
+            Effect = values[13];
+            LvlUpgrades = values[14];
+        }
+
         public void TalentLoad()
         {
             string tmpName = TalentName;  //почему-то Name после InitializeComponent() меняется на "Talent"
