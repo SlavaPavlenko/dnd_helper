@@ -30,9 +30,22 @@
         {
             this.main_panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.will_other_textBox = new System.Windows.Forms.TextBox();
+            this.durability_other_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_other_textBox = new System.Windows.Forms.TextBox();
             this.KD_other_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_armor_textBox = new System.Windows.Forms.TextBox();
+            this.will_armor_textBox = new System.Windows.Forms.TextBox();
             this.KD_armor_textBox = new System.Windows.Forms.TextBox();
+            this.will_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.durability_armor_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.durability_lvl_textBox = new System.Windows.Forms.TextBox();
             this.KD_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.will_value_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_value_textBox = new System.Windows.Forms.TextBox();
             this.durability_value_textBox = new System.Windows.Forms.TextBox();
             this.KD_value_textBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -190,7 +203,7 @@
             this.wounded_label = new System.Windows.Forms.Label();
             this.healing_amount_label = new System.Windows.Forms.Label();
             this.healing_value_label = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.effects_textBox = new System.Windows.Forms.TextBox();
             this.healing_label = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.effects_label = new System.Windows.Forms.Label();
@@ -203,7 +216,7 @@
             this.healing_value_textBox = new System.Windows.Forms.TextBox();
             this.healingsUsed_textBox = new System.Windows.Forms.TextBox();
             this.wounded_textBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.temporary_textBox = new System.Windows.Forms.TextBox();
             this.curHits_textBox = new System.Windows.Forms.TextBox();
             this.failedDeathSaves_checkBox3 = new System.Windows.Forms.CheckBox();
             this.failedDeathSaves_checkBox2 = new System.Windows.Forms.CheckBox();
@@ -248,19 +261,6 @@
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.снаряжениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.талантыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reaction_value_textBox = new System.Windows.Forms.TextBox();
-            this.will_value_textBox = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.durability_lvl_textBox = new System.Windows.Forms.TextBox();
-            this.durability_armor_textBox = new System.Windows.Forms.TextBox();
-            this.durability_other_textBox = new System.Windows.Forms.TextBox();
-            this.reaction_lvl_textBox = new System.Windows.Forms.TextBox();
-            this.will_lvl_textBox = new System.Windows.Forms.TextBox();
-            this.will_armor_textBox = new System.Windows.Forms.TextBox();
-            this.reaction_armor_textBox = new System.Windows.Forms.TextBox();
-            this.reaction_other_textBox = new System.Windows.Forms.TextBox();
-            this.will_other_textBox = new System.Windows.Forms.TextBox();
             this.main_panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.dices_groupBox.SuspendLayout();
@@ -323,12 +323,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Защиты";
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(35, 119);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(38, 13);
+            this.label32.TabIndex = 5;
+            this.label32.Text = "ВОЛЯ";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(36, 95);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(35, 13);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "РЕАК";
+            // 
+            // will_other_textBox
+            // 
+            this.will_other_textBox.Location = new System.Drawing.Point(156, 116);
+            this.will_other_textBox.Name = "will_other_textBox";
+            this.will_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_other_textBox.TabIndex = 4;
+            // 
+            // durability_other_textBox
+            // 
+            this.durability_other_textBox.Location = new System.Drawing.Point(156, 68);
+            this.durability_other_textBox.Name = "durability_other_textBox";
+            this.durability_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_other_textBox.TabIndex = 4;
+            // 
+            // reaction_other_textBox
+            // 
+            this.reaction_other_textBox.Location = new System.Drawing.Point(156, 92);
+            this.reaction_other_textBox.Name = "reaction_other_textBox";
+            this.reaction_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_other_textBox.TabIndex = 4;
+            // 
             // KD_other_textBox
             // 
             this.KD_other_textBox.Location = new System.Drawing.Point(156, 43);
             this.KD_other_textBox.Name = "KD_other_textBox";
             this.KD_other_textBox.Size = new System.Drawing.Size(29, 20);
             this.KD_other_textBox.TabIndex = 4;
+            // 
+            // reaction_armor_textBox
+            // 
+            this.reaction_armor_textBox.Location = new System.Drawing.Point(118, 92);
+            this.reaction_armor_textBox.Name = "reaction_armor_textBox";
+            this.reaction_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_armor_textBox.TabIndex = 4;
+            // 
+            // will_armor_textBox
+            // 
+            this.will_armor_textBox.Location = new System.Drawing.Point(118, 116);
+            this.will_armor_textBox.Name = "will_armor_textBox";
+            this.will_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_armor_textBox.TabIndex = 4;
             // 
             // KD_armor_textBox
             // 
@@ -337,6 +390,37 @@
             this.KD_armor_textBox.Size = new System.Drawing.Size(29, 20);
             this.KD_armor_textBox.TabIndex = 4;
             // 
+            // will_lvl_textBox
+            // 
+            this.will_lvl_textBox.Enabled = false;
+            this.will_lvl_textBox.Location = new System.Drawing.Point(80, 116);
+            this.will_lvl_textBox.Name = "will_lvl_textBox";
+            this.will_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_lvl_textBox.TabIndex = 4;
+            // 
+            // durability_armor_textBox
+            // 
+            this.durability_armor_textBox.Location = new System.Drawing.Point(118, 68);
+            this.durability_armor_textBox.Name = "durability_armor_textBox";
+            this.durability_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_armor_textBox.TabIndex = 4;
+            // 
+            // reaction_lvl_textBox
+            // 
+            this.reaction_lvl_textBox.Enabled = false;
+            this.reaction_lvl_textBox.Location = new System.Drawing.Point(80, 92);
+            this.reaction_lvl_textBox.Name = "reaction_lvl_textBox";
+            this.reaction_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_lvl_textBox.TabIndex = 4;
+            // 
+            // durability_lvl_textBox
+            // 
+            this.durability_lvl_textBox.Enabled = false;
+            this.durability_lvl_textBox.Location = new System.Drawing.Point(80, 68);
+            this.durability_lvl_textBox.Name = "durability_lvl_textBox";
+            this.durability_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_lvl_textBox.TabIndex = 4;
+            // 
             // KD_lvl_textBox
             // 
             this.KD_lvl_textBox.Enabled = false;
@@ -344,6 +428,22 @@
             this.KD_lvl_textBox.Name = "KD_lvl_textBox";
             this.KD_lvl_textBox.Size = new System.Drawing.Size(29, 20);
             this.KD_lvl_textBox.TabIndex = 4;
+            // 
+            // will_value_textBox
+            // 
+            this.will_value_textBox.Enabled = false;
+            this.will_value_textBox.Location = new System.Drawing.Point(7, 116);
+            this.will_value_textBox.Name = "will_value_textBox";
+            this.will_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_value_textBox.TabIndex = 4;
+            // 
+            // reaction_value_textBox
+            // 
+            this.reaction_value_textBox.Enabled = false;
+            this.reaction_value_textBox.Location = new System.Drawing.Point(7, 92);
+            this.reaction_value_textBox.Name = "reaction_value_textBox";
+            this.reaction_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_value_textBox.TabIndex = 4;
             // 
             // durability_value_textBox
             // 
@@ -1809,7 +1909,7 @@
             this.hits_groupBox.Controls.Add(this.wounded_label);
             this.hits_groupBox.Controls.Add(this.healing_amount_label);
             this.hits_groupBox.Controls.Add(this.healing_value_label);
-            this.hits_groupBox.Controls.Add(this.textBox2);
+            this.hits_groupBox.Controls.Add(this.effects_textBox);
             this.hits_groupBox.Controls.Add(this.healing_label);
             this.hits_groupBox.Controls.Add(this.label24);
             this.hits_groupBox.Controls.Add(this.effects_label);
@@ -1822,7 +1922,7 @@
             this.hits_groupBox.Controls.Add(this.healing_value_textBox);
             this.hits_groupBox.Controls.Add(this.healingsUsed_textBox);
             this.hits_groupBox.Controls.Add(this.wounded_textBox);
-            this.hits_groupBox.Controls.Add(this.textBox1);
+            this.hits_groupBox.Controls.Add(this.temporary_textBox);
             this.hits_groupBox.Controls.Add(this.curHits_textBox);
             this.hits_groupBox.Controls.Add(this.failedDeathSaves_checkBox3);
             this.hits_groupBox.Controls.Add(this.failedDeathSaves_checkBox2);
@@ -1872,13 +1972,13 @@
             this.healing_value_label.TabIndex = 1;
             this.healing_value_label.Text = "значение";
             // 
-            // textBox2
+            // effects_textBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 169);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 69);
-            this.textBox2.TabIndex = 2;
+            this.effects_textBox.Location = new System.Drawing.Point(6, 169);
+            this.effects_textBox.Multiline = true;
+            this.effects_textBox.Name = "effects_textBox";
+            this.effects_textBox.Size = new System.Drawing.Size(252, 69);
+            this.effects_textBox.TabIndex = 2;
             // 
             // healing_label
             // 
@@ -1984,13 +2084,13 @@
             this.wounded_textBox.Size = new System.Drawing.Size(36, 20);
             this.wounded_textBox.TabIndex = 2;
             // 
-            // textBox1
+            // temporary_textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 79);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(36, 20);
-            this.textBox1.TabIndex = 2;
+            this.temporary_textBox.Location = new System.Drawing.Point(62, 79);
+            this.temporary_textBox.MaxLength = 3;
+            this.temporary_textBox.Name = "temporary_textBox";
+            this.temporary_textBox.Size = new System.Drawing.Size(36, 20);
+            this.temporary_textBox.TabIndex = 2;
             // 
             // curHits_textBox
             // 
@@ -2383,15 +2483,16 @@
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Импорт";
             this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.импортToolStripMenuItem_Click);
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.загрузитьToolStripMenuItem.Text = "Экспорт";
+            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.экспортToolStripMenuItem_Click);
             // 
             // снаряжениеToolStripMenuItem
             // 
@@ -2406,106 +2507,6 @@
             this.талантыToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.талантыToolStripMenuItem.Text = "Таланты";
             this.талантыToolStripMenuItem.Click += new System.EventHandler(this.талантыToolStripMenuItem_Click);
-            // 
-            // reaction_value_textBox
-            // 
-            this.reaction_value_textBox.Enabled = false;
-            this.reaction_value_textBox.Location = new System.Drawing.Point(7, 92);
-            this.reaction_value_textBox.Name = "reaction_value_textBox";
-            this.reaction_value_textBox.Size = new System.Drawing.Size(29, 20);
-            this.reaction_value_textBox.TabIndex = 4;
-            // 
-            // will_value_textBox
-            // 
-            this.will_value_textBox.Enabled = false;
-            this.will_value_textBox.Location = new System.Drawing.Point(7, 116);
-            this.will_value_textBox.Name = "will_value_textBox";
-            this.will_value_textBox.Size = new System.Drawing.Size(29, 20);
-            this.will_value_textBox.TabIndex = 4;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(36, 95);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(35, 13);
-            this.label31.TabIndex = 5;
-            this.label31.Text = "РЕАК";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(35, 119);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(38, 13);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "ВОЛЯ";
-            // 
-            // durability_lvl_textBox
-            // 
-            this.durability_lvl_textBox.Enabled = false;
-            this.durability_lvl_textBox.Location = new System.Drawing.Point(80, 68);
-            this.durability_lvl_textBox.Name = "durability_lvl_textBox";
-            this.durability_lvl_textBox.Size = new System.Drawing.Size(29, 20);
-            this.durability_lvl_textBox.TabIndex = 4;
-            // 
-            // durability_armor_textBox
-            // 
-            this.durability_armor_textBox.Location = new System.Drawing.Point(118, 68);
-            this.durability_armor_textBox.Name = "durability_armor_textBox";
-            this.durability_armor_textBox.Size = new System.Drawing.Size(29, 20);
-            this.durability_armor_textBox.TabIndex = 4;
-            // 
-            // durability_other_textBox
-            // 
-            this.durability_other_textBox.Location = new System.Drawing.Point(156, 68);
-            this.durability_other_textBox.Name = "durability_other_textBox";
-            this.durability_other_textBox.Size = new System.Drawing.Size(29, 20);
-            this.durability_other_textBox.TabIndex = 4;
-            // 
-            // reaction_lvl_textBox
-            // 
-            this.reaction_lvl_textBox.Enabled = false;
-            this.reaction_lvl_textBox.Location = new System.Drawing.Point(80, 92);
-            this.reaction_lvl_textBox.Name = "reaction_lvl_textBox";
-            this.reaction_lvl_textBox.Size = new System.Drawing.Size(29, 20);
-            this.reaction_lvl_textBox.TabIndex = 4;
-            // 
-            // will_lvl_textBox
-            // 
-            this.will_lvl_textBox.Enabled = false;
-            this.will_lvl_textBox.Location = new System.Drawing.Point(80, 116);
-            this.will_lvl_textBox.Name = "will_lvl_textBox";
-            this.will_lvl_textBox.Size = new System.Drawing.Size(29, 20);
-            this.will_lvl_textBox.TabIndex = 4;
-            // 
-            // will_armor_textBox
-            // 
-            this.will_armor_textBox.Location = new System.Drawing.Point(118, 116);
-            this.will_armor_textBox.Name = "will_armor_textBox";
-            this.will_armor_textBox.Size = new System.Drawing.Size(29, 20);
-            this.will_armor_textBox.TabIndex = 4;
-            // 
-            // reaction_armor_textBox
-            // 
-            this.reaction_armor_textBox.Location = new System.Drawing.Point(118, 92);
-            this.reaction_armor_textBox.Name = "reaction_armor_textBox";
-            this.reaction_armor_textBox.Size = new System.Drawing.Size(29, 20);
-            this.reaction_armor_textBox.TabIndex = 4;
-            // 
-            // reaction_other_textBox
-            // 
-            this.reaction_other_textBox.Location = new System.Drawing.Point(156, 92);
-            this.reaction_other_textBox.Name = "reaction_other_textBox";
-            this.reaction_other_textBox.Size = new System.Drawing.Size(29, 20);
-            this.reaction_other_textBox.TabIndex = 4;
-            // 
-            // will_other_textBox
-            // 
-            this.will_other_textBox.Location = new System.Drawing.Point(156, 116);
-            this.will_other_textBox.Name = "will_other_textBox";
-            this.will_other_textBox.Size = new System.Drawing.Size(29, 20);
-            this.will_other_textBox.TabIndex = 4;
             // 
             // mainForm
             // 
@@ -2709,14 +2710,14 @@
         private System.Windows.Forms.Label healingsUsed_label;
         private System.Windows.Forms.TextBox healingsUsed_textBox;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox temporary_textBox;
         private System.Windows.Forms.Label secondWind_label;
         private System.Windows.Forms.CheckBox secondWind_checkBox;
         private System.Windows.Forms.Label failedDeathSaves_label;
         private System.Windows.Forms.CheckBox failedDeathSaves_checkBox3;
         private System.Windows.Forms.CheckBox failedDeathSaves_checkBox2;
         private System.Windows.Forms.CheckBox failedDeathSaves_checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox effects_textBox;
         private System.Windows.Forms.Label effects_label;
         private System.Windows.Forms.TextBox curing_result_textBox;
         private System.Windows.Forms.TextBox stealth_result_textBox;

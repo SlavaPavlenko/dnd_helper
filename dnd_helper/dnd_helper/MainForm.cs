@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -1267,6 +1268,13 @@ namespace dnd_helper
             Import.talentsImport();
         }
 
+        //Класс
+        public static string MyClass = "";
+        private void myClass_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MyClass = myClass_comboBox.SelectedItem.ToString();
+        }
+
         //Импорт
         Import importForm = new Import();
         private void импортToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1277,11 +1285,32 @@ namespace dnd_helper
             importForm.BringToFront();
         }
 
-        //Класс
-        public static string MyClass = "";
-        private void myClass_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        //Экспорт
+        private void экспортToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MyClass = myClass_comboBox.SelectedItem.ToString();
+            string filePath = Directory.GetCurrentDirectory() + "\\Stats.txt";
+            //StreamWriter writer = new StreamWriter(filePath, false, Encoding.GetEncoding(1251));
+            StreamWriter writer = new StreamWriter(filePath);
+            string str = "";
+            try
+            {
+                str = name_textBox.Text + "|" + lvl_textBox.Text + "|" + myClass_comboBox.Text + "|" +
+                    strange_textBox.Text + "|" + stamina_textBox.Text + "|" + agility_textBox.Text + "|" + intelligence_textBox.Text + "|" + wisdom_textBox.Text + "|" + charisma_textBox.Text + "|" +  //характеристики
+                    maxHits_textBox.Text + "|" + curHits_textBox.Text + "|" + temporary_textBox.Text + "|" + healing_amount_textBox.Text + "|" + healingsUsed_textBox.Text + "|" + secondWind_checkBox.Checked.ToString() + "|" + failedDeathSaves_checkBox1.Checked.ToString() + "|" + failedDeathSaves_checkBox2.Checked.ToString() + "|" + failedDeathSaves_checkBox3.Checked.ToString() + "|" + effects_textBox.Text + "|" +    //хиты
+                    acrobatics_textBox.Text + "|" + athletics_textBox.Text + "|" + attentiveness_textBox.Text + "|" + steal_textBox.Text + "|" + endurance_textBox.Text + "|" + terrifying_textBox.Text + "|" + streetKnowlage_textBox.Text + "|" + history_textBox.Text + "|" + magic_textBox.Text + "|" + cheating_textBox.Text + "|" + discussion_textBox.Text + "|" + dungeons_textBox.Text + "|" + nature_textBox.Text + "|" + insight_textBox.Text + "|" + religion_textBox.Text + "|" + stealth_textBox.Text + "|" + curing_textBox.Text + "|" + //бонусы навыков
+                    acrobatics_checkBox.Checked.ToString() + "|" + athletics_checkBox.Checked.ToString() + "|" + attentiveness_checkBox.Checked.ToString() + "|" + steal_checkBox.Checked.ToString() + "|" + endurance_checkBox.Checked.ToString() + "|" + terrifying_checkBox.Checked.ToString() + "|" + streetKnowlage_checkBox.Checked.ToString() + "|" + history_checkBox.Checked.ToString() + "|" + magic_checkBox.Checked.ToString() + "|" + cheating_checkBox.Checked.ToString() + "|" + discussion_checkBox.Checked.ToString() + "|" + dungeons_checkBox.Checked.ToString() + "|" + nature_checkBox.Checked.ToString() + "|" + insight_checkBox.Checked.ToString() + "|" + religion_checkBox.Checked.ToString() + "|" + stealth_checkBox.Checked.ToString() + "|" + curing_checkBox.Checked.ToString() + "|" +  //тренированность
+                    acrobatics_armorFine_textBox.Text + "|" + athletics_armorFine_textBox.Text + "|" + steal_armorFine_textBox.Text + "|" + endurance_armorFine_textBox.Text + "|" + stealth_armorFine_textBox.Text + "|" + //штрафы за броню
+                    acrobatics_other_textBox.Text + "|" + athletics_other_textBox.Text + "|" + attentiveness_other_textBox.Text + "|" + steal_other_textBox.Text + "|" + endurance_other_textBox.Text + "|" + terrifying_other_textBox.Text + "|" + streetKnowlage_other_textBox.Text + "|" + history_other_textBox.Text + "|" + magic_other_textBox.Text + "|" + cheating_other_textBox.Text + "|" + discussion_other_textBox.Text + "|" + dungeons_other_textBox.Text + "|" + nature_other_textBox.Text + "|" + insight_other_textBox.Text + "|" + religion_other_textBox.Text + "|" + stealth_other_textBox.Text + "|" + curing_other_textBox.Text + "|" +   //иное
+                    KD_armor_textBox.Text + "|" + durability_armor_textBox.Text + "|" + reaction_armor_textBox.Text + "|" + will_armor_textBox.Text + "|" + KD_other_textBox.Text + "|" + durability_other_textBox.Text + "|" + reaction_other_textBox.Text + "|" + will_other_textBox.Text;
+            }
+            catch (Exception)
+            {
+                var result = MessageBox.Show("Заполните все необходимые пустые поля.", "Ошибка",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+            writer.Write(str);
+            writer.Dispose();
         }
     }
 }
