@@ -57,7 +57,8 @@ namespace dnd_helper
         }
         private void stamina_change()
         {
-            try {
+            try
+            {
                 //вычисление mod
                 if (stamina_textBox.Text != "")
                     mod_stamina_textBox.Text = (Convert.ToInt32(stamina_textBox.Text) / 2 - 5).ToString();
@@ -77,7 +78,8 @@ namespace dnd_helper
         }
         private void intelligence_change()
         {
-            try {
+            try
+            {
                 //вычисление mod
                 if (intelligence_textBox.Text != "")
                     mod_intelligence_textBox.Text = (Convert.ToInt32(intelligence_textBox.Text) / 2 - 5).ToString();
@@ -97,7 +99,8 @@ namespace dnd_helper
         }
         private void wizdom_change()
         {
-            try {
+            try
+            {
                 //вычисление mod
                 if (wisdom_textBox.Text != "")
                     mod_wisdom_textBox.Text = (Convert.ToInt32(wisdom_textBox.Text) / 2 - 5).ToString();
@@ -117,7 +120,8 @@ namespace dnd_helper
         }
         private void charisma_change()
         {
-            try {
+            try
+            {
                 //вычисление mod
                 if (charisma_textBox.Text != "")
                     mod_charisma_textBox.Text = (Convert.ToInt32(charisma_textBox.Text) / 2 - 5).ToString();
@@ -171,7 +175,8 @@ namespace dnd_helper
         }
         private void athletics_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (athletics_textBox.Text != "")
@@ -204,7 +209,8 @@ namespace dnd_helper
         }
         private void attentiveness_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (attentiveness_textBox.Text != "")
@@ -232,7 +238,8 @@ namespace dnd_helper
         }
         private void steal_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (steal_textBox.Text != "")
@@ -265,7 +272,8 @@ namespace dnd_helper
         }
         private void endurance_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (endurance_textBox.Text != "")
@@ -298,7 +306,8 @@ namespace dnd_helper
         }
         private void terrifying_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (terrifying_textBox.Text != "")
@@ -355,7 +364,8 @@ namespace dnd_helper
         }
         private void history_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (history_textBox.Text != "")
@@ -383,7 +393,8 @@ namespace dnd_helper
         }
         private void magic_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (magic_textBox.Text != "")
@@ -411,7 +422,8 @@ namespace dnd_helper
         }
         private void cheating_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (cheating_textBox.Text != "")
@@ -439,7 +451,8 @@ namespace dnd_helper
         }
         private void discussion_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (discussion_textBox.Text != "")
@@ -467,7 +480,8 @@ namespace dnd_helper
         }
         private void dungeons_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (dungeons_textBox.Text != "")
@@ -495,7 +509,8 @@ namespace dnd_helper
         }
         private void nature_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (nature_textBox.Text != "")
@@ -523,7 +538,8 @@ namespace dnd_helper
         }
         private void insight_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (insight_textBox.Text != "")
@@ -551,7 +567,8 @@ namespace dnd_helper
         }
         private void religion_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (religion_textBox.Text != "")
@@ -579,7 +596,8 @@ namespace dnd_helper
         }
         private void stealth_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (stealth_textBox.Text != "")
@@ -612,7 +630,8 @@ namespace dnd_helper
         }
         private void curing_change()
         {
-            try {
+            try
+            {
                 //вычисление бонуса
                 int bonus;
                 if (curing_textBox.Text != "")
@@ -640,7 +659,8 @@ namespace dnd_helper
         }
         private void wounded_change()
         {
-            try {
+            try
+            {
                 if (maxHits_textBox.Text != "")
                     wounded_textBox.Text = (Convert.ToInt32(maxHits_textBox.Text) / 2).ToString();
             }
@@ -1265,7 +1285,7 @@ namespace dnd_helper
         public static List<Talent> allTalents = new List<Talent>();
         private void mainForm_Load(object sender, EventArgs e)
         {
-            импортToolStripMenuItem_Click(new object(), new EventArgs());
+            талантыToolStripMenuItem1_Click(new object(), new EventArgs());
         }
 
         //Класс
@@ -1273,21 +1293,6 @@ namespace dnd_helper
         private void myClass_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             MyClass = myClass_comboBox.SelectedItem.ToString();
-        }
-
-        //Импорт
-        //Import importForm = new Import();
-        private void импортToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string filePath = Directory.GetCurrentDirectory() + "\\Talents.txt";
-            StreamReader reader = new StreamReader(filePath, System.Text.Encoding.Default);
-            while (!reader.EndOfStream)
-            {
-                string str = reader.ReadLine();
-                string[] valuse = str.Split('|');
-                allTalents.Add(new Talent(valuse));
-            }
-            reader.Dispose();
         }
 
         //Экспорт
@@ -1315,6 +1320,121 @@ namespace dnd_helper
             }
             writer.Write(str);
             writer.Dispose();
+        }
+
+        //Импорт характеристик
+        private void характеристикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filePath = Directory.GetCurrentDirectory() + "\\Stats.txt";
+            StreamReader reader = new StreamReader(filePath, System.Text.Encoding.UTF8);
+            string str = reader.ReadLine();
+            string[] values = str.Split('|');
+            name_textBox.Text = values[0];
+            lvl_textBox.Text = values[1];
+            myClass_comboBox.Text = values[2];
+            //характеристики
+            strange_textBox.Text = values[3];
+            stamina_textBox.Text = values[4];
+            agility_textBox.Text = values[5];
+            intelligence_textBox.Text = values[6];
+            wisdom_textBox.Text = values[7];
+            charisma_textBox.Text = values[8];
+            //хиты
+            maxHits_textBox.Text = values[9];
+            curHits_textBox.Text = values[10];
+            temporary_textBox.Text = values[11];
+            healing_amount_textBox.Text = values[12];
+            healingsUsed_textBox.Text = values[13];
+            secondWind_checkBox.Checked = Convert.ToBoolean(values[14]);
+            failedDeathSaves_checkBox1.Checked = Convert.ToBoolean(values[15]);
+            failedDeathSaves_checkBox2.Checked = Convert.ToBoolean(values[16]);
+            failedDeathSaves_checkBox3.Checked = Convert.ToBoolean(values[17]);
+            effects_textBox.Text = values[18];
+            //бонусы навыков
+            acrobatics_textBox.Text = values[19];
+            athletics_textBox.Text = values[20];
+            attentiveness_textBox.Text = values[21];
+            steal_textBox.Text = values[22];
+            endurance_textBox.Text = values[23];
+            terrifying_textBox.Text = values[24];
+            streetKnowlage_textBox.Text = values[25];
+            history_textBox.Text = values[26];
+            magic_textBox.Text = values[27];
+            cheating_textBox.Text = values[28];
+            discussion_textBox.Text = values[29];
+            dungeons_textBox.Text = values[30];
+            nature_textBox.Text = values[31];
+            insight_textBox.Text = values[32];
+            religion_textBox.Text = values[33];
+            stealth_textBox.Text = values[34];
+            curing_textBox.Text = values[35];
+            //тренированность
+            acrobatics_checkBox.Checked = Convert.ToBoolean(values[36]);
+            athletics_checkBox.Checked = Convert.ToBoolean(values[37]);
+            attentiveness_checkBox.Checked = Convert.ToBoolean(values[38]);
+            steal_checkBox.Checked = Convert.ToBoolean(values[39]);
+            endurance_checkBox.Checked = Convert.ToBoolean(values[40]);
+            terrifying_checkBox.Checked = Convert.ToBoolean(values[41]);
+            streetKnowlage_checkBox.Checked = Convert.ToBoolean(values[42]);
+            history_checkBox.Checked = Convert.ToBoolean(values[43]);
+            magic_checkBox.Checked = Convert.ToBoolean(values[44]);
+            cheating_checkBox.Checked = Convert.ToBoolean(values[45]);
+            discussion_checkBox.Checked = Convert.ToBoolean(values[46]);
+            dungeons_checkBox.Checked = Convert.ToBoolean(values[47]);
+            nature_checkBox.Checked = Convert.ToBoolean(values[48]);
+            insight_checkBox.Checked = Convert.ToBoolean(values[49]);
+            religion_checkBox.Checked = Convert.ToBoolean(values[50]);
+            stealth_checkBox.Checked = Convert.ToBoolean(values[51]);
+            curing_checkBox.Checked = Convert.ToBoolean(values[52]);
+            //штрафы за броню
+            acrobatics_armorFine_textBox.Text = values[53];
+            athletics_armorFine_textBox.Text = values[54];
+            steal_armorFine_textBox.Text = values[55];
+            endurance_armorFine_textBox.Text = values[56];
+            stealth_armorFine_textBox.Text = values[57];
+            //иное
+            acrobatics_other_textBox.Text = values[58];
+            athletics_other_textBox.Text = values[59];
+            attentiveness_other_textBox.Text = values[60];
+            steal_other_textBox.Text = values[61];
+            endurance_other_textBox.Text = values[62];
+            terrifying_other_textBox.Text = values[63];
+            streetKnowlage_other_textBox.Text = values[64];
+            history_other_textBox.Text = values[65];
+            magic_other_textBox.Text = values[66];
+            cheating_other_textBox.Text = values[67];
+            discussion_other_textBox.Text = values[68];
+            dungeons_other_textBox.Text = values[69];
+            nature_other_textBox.Text = values[70];
+            insight_other_textBox.Text = values[71];
+            religion_other_textBox.Text = values[72];
+            stealth_other_textBox.Text = values[73];
+            curing_other_textBox.Text = values[74];
+            //защиты
+            KD_armor_textBox.Text = values[75];
+            durability_armor_textBox.Text = values[76];
+            reaction_armor_textBox.Text = values[77];
+            will_armor_textBox.Text = values[78];
+            KD_other_textBox.Text = values[79];
+            durability_other_textBox.Text = values[80];
+            reaction_other_textBox.Text = values[81];
+            will_other_textBox.Text = values[82];
+            reader.Dispose();
+        }
+
+        //Импорт талантов
+        private void талантыToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            allTalents.Clear();
+            string filePath = Directory.GetCurrentDirectory() + "\\Talents.txt";
+            StreamReader reader = new StreamReader(filePath, System.Text.Encoding.Default);
+            while (!reader.EndOfStream)
+            {
+                string str = reader.ReadLine();
+                string[] valuse = str.Split('|');
+                allTalents.Add(new Talent(valuse));
+            }
+            reader.Dispose();
         }
     }
 }

@@ -258,6 +258,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.характеристикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.талантыToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.снаряжениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.талантыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2482,10 +2484,26 @@
             // 
             // сохранитьToolStripMenuItem
             // 
+            this.сохранитьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.характеристикиToolStripMenuItem,
+            this.талантыToolStripMenuItem1});
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
             this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Импорт";
-            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.импортToolStripMenuItem_Click);
+            // 
+            // характеристикиToolStripMenuItem
+            // 
+            this.характеристикиToolStripMenuItem.Name = "характеристикиToolStripMenuItem";
+            this.характеристикиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.характеристикиToolStripMenuItem.Text = "Характеристики";
+            this.характеристикиToolStripMenuItem.Click += new System.EventHandler(this.характеристикиToolStripMenuItem_Click);
+            // 
+            // талантыToolStripMenuItem1
+            // 
+            this.талантыToolStripMenuItem1.Name = "талантыToolStripMenuItem1";
+            this.талантыToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.талантыToolStripMenuItem1.Text = "Таланты";
+            this.талантыToolStripMenuItem1.Click += new System.EventHandler(this.талантыToolStripMenuItem1_Click);
             // 
             // загрузитьToolStripMenuItem
             // 
@@ -2772,6 +2790,8 @@
         private System.Windows.Forms.TextBox durability_armor_textBox;
         private System.Windows.Forms.TextBox reaction_lvl_textBox;
         private System.Windows.Forms.TextBox durability_lvl_textBox;
+        private System.Windows.Forms.ToolStripMenuItem характеристикиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem талантыToolStripMenuItem1;
     }
 }
 
