@@ -11,7 +11,7 @@ namespace dnd_helper
 
         private void MyBackpack_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ((Talent)sender).Hide();
+            ((MyBackpack)sender).Hide();
             e.Cancel = true;
         }
     }
