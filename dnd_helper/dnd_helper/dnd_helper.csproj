@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Import.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Import.Designer.cs">
-      <DependentUpon>Import.cs</DependentUpon>
-    </Compile>
     <Compile Include="MyBackpack.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,9 +79,6 @@
     <Compile Include="MyTalents.Designer.cs">
       <DependentUpon>MyTalents.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Import.resx">
-      <DependentUpon>Import.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyBackpack.resx">
       <DependentUpon>MyBackpack.cs</DependentUpon>
     </EmbeddedResource>

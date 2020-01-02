@@ -9,10 +9,10 @@ namespace dnd_helper
         public TalentList()
         {
             InitializeComponent();
+            classes_comboBox.Text = mainForm.MyClass;
         }
         private void TalentList_Load(object sender, EventArgs e)
         {
-            classes_comboBox.Text = mainForm.MyClass;
             talents_listBox.Items.Clear();
             for (int i = 0; i < mainForm.allTalents.Count; i++)
                 if (mainForm.allTalents.ElementAt(i).TalentClass == classes_comboBox.SelectedItem.ToString())

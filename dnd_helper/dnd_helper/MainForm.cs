@@ -1265,7 +1265,7 @@ namespace dnd_helper
         public static List<Talent> allTalents = new List<Talent>();
         private void mainForm_Load(object sender, EventArgs e)
         {
-            Import.talentsImport();
+            импортToolStripMenuItem_Click(new object(), new EventArgs());
         }
 
         //Класс
@@ -1276,20 +1276,24 @@ namespace dnd_helper
         }
 
         //Импорт
-        Import importForm = new Import();
+        //Import importForm = new Import();
         private void импортToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!importForm.Created)
-                importForm = new Import();
-            importForm.Show();
-            importForm.BringToFront();
+            string filePath = Directory.GetCurrentDirectory() + "\\Talents.txt";
+            StreamReader reader = new StreamReader(filePath, System.Text.Encoding.Default);
+            while (!reader.EndOfStream)
+            {
+                string str = reader.ReadLine();
+                string[] valuse = str.Split('|');
+                allTalents.Add(new Talent(valuse));
+            }
+            reader.Dispose();
         }
 
         //Экспорт
         private void экспортToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string filePath = Directory.GetCurrentDirectory() + "\\Stats.txt";
-            //StreamWriter writer = new StreamWriter(filePath, false, Encoding.GetEncoding(1251));
             StreamWriter writer = new StreamWriter(filePath);
             string str = "";
             try
