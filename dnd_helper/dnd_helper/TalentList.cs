@@ -12,8 +12,11 @@ namespace dnd_helper
         }
         private void TalentList_Load(object sender, EventArgs e)
         {
+            classes_comboBox.Text = mainForm.MyClass;
+            talents_listBox.Items.Clear();
             for (int i = 0; i < mainForm.allTalents.Count; i++)
-                talents_listBox.Items.Add(mainForm.allTalents.ElementAt(i).TalentName);
+                if (mainForm.allTalents.ElementAt(i).TalentClass == classes_comboBox.SelectedItem.ToString())
+                    talents_listBox.Items.Add(mainForm.allTalents.ElementAt(i).TalentName);
         }
         public ListBox unlimited_listBox;
         public ListBox scenely_listBox;

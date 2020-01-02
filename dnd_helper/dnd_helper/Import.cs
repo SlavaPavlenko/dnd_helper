@@ -29,8 +29,6 @@ namespace dnd_helper
                 str = reader.ReadLine();
                 values = str.Split('|');
                 mainForm.allTalents.Add(new Talent(values));
-                int a = 2;
-                a++;
             }
             reader.Dispose();
         }

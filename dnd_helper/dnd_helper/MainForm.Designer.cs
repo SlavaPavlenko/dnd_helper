@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             this.main_panel = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.KD_other_textBox = new System.Windows.Forms.TextBox();
+            this.KD_armor_textBox = new System.Windows.Forms.TextBox();
+            this.KD_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.durability_value_textBox = new System.Windows.Forms.TextBox();
+            this.KD_value_textBox = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.myClass_comboBox = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.dices_groupBox = new System.Windows.Forms.GroupBox();
             this.dices_log_textBox = new System.Windows.Forms.TextBox();
             this.dices_throw_button = new System.Windows.Forms.Button();
@@ -235,7 +248,21 @@
             this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.снаряжениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.талантыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reaction_value_textBox = new System.Windows.Forms.TextBox();
+            this.will_value_textBox = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.durability_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.durability_armor_textBox = new System.Windows.Forms.TextBox();
+            this.durability_other_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.will_lvl_textBox = new System.Windows.Forms.TextBox();
+            this.will_armor_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_armor_textBox = new System.Windows.Forms.TextBox();
+            this.reaction_other_textBox = new System.Windows.Forms.TextBox();
+            this.will_other_textBox = new System.Windows.Forms.TextBox();
             this.main_panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.dices_groupBox.SuspendLayout();
             this.skills_groupBox.SuspendLayout();
             this.hits_groupBox.SuspendLayout();
@@ -245,6 +272,9 @@
             // 
             // main_panel
             // 
+            this.main_panel.Controls.Add(this.groupBox1);
+            this.main_panel.Controls.Add(this.myClass_comboBox);
+            this.main_panel.Controls.Add(this.label25);
             this.main_panel.Controls.Add(this.dices_groupBox);
             this.main_panel.Controls.Add(this.submit_button);
             this.main_panel.Controls.Add(this.skills_groupBox);
@@ -258,8 +288,151 @@
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(906, 517);
+            this.main_panel.Size = new System.Drawing.Size(940, 517);
             this.main_panel.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label32);
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.will_other_textBox);
+            this.groupBox1.Controls.Add(this.durability_other_textBox);
+            this.groupBox1.Controls.Add(this.reaction_other_textBox);
+            this.groupBox1.Controls.Add(this.KD_other_textBox);
+            this.groupBox1.Controls.Add(this.reaction_armor_textBox);
+            this.groupBox1.Controls.Add(this.will_armor_textBox);
+            this.groupBox1.Controls.Add(this.KD_armor_textBox);
+            this.groupBox1.Controls.Add(this.will_lvl_textBox);
+            this.groupBox1.Controls.Add(this.durability_armor_textBox);
+            this.groupBox1.Controls.Add(this.reaction_lvl_textBox);
+            this.groupBox1.Controls.Add(this.durability_lvl_textBox);
+            this.groupBox1.Controls.Add(this.KD_lvl_textBox);
+            this.groupBox1.Controls.Add(this.will_value_textBox);
+            this.groupBox1.Controls.Add(this.reaction_value_textBox);
+            this.groupBox1.Controls.Add(this.durability_value_textBox);
+            this.groupBox1.Controls.Add(this.KD_value_textBox);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Location = new System.Drawing.Point(739, 337);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(193, 142);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Защиты";
+            // 
+            // KD_other_textBox
+            // 
+            this.KD_other_textBox.Location = new System.Drawing.Point(156, 43);
+            this.KD_other_textBox.Name = "KD_other_textBox";
+            this.KD_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.KD_other_textBox.TabIndex = 4;
+            // 
+            // KD_armor_textBox
+            // 
+            this.KD_armor_textBox.Location = new System.Drawing.Point(118, 43);
+            this.KD_armor_textBox.Name = "KD_armor_textBox";
+            this.KD_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.KD_armor_textBox.TabIndex = 4;
+            // 
+            // KD_lvl_textBox
+            // 
+            this.KD_lvl_textBox.Enabled = false;
+            this.KD_lvl_textBox.Location = new System.Drawing.Point(80, 43);
+            this.KD_lvl_textBox.Name = "KD_lvl_textBox";
+            this.KD_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.KD_lvl_textBox.TabIndex = 4;
+            // 
+            // durability_value_textBox
+            // 
+            this.durability_value_textBox.Enabled = false;
+            this.durability_value_textBox.Location = new System.Drawing.Point(7, 67);
+            this.durability_value_textBox.Name = "durability_value_textBox";
+            this.durability_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_value_textBox.TabIndex = 4;
+            // 
+            // KD_value_textBox
+            // 
+            this.KD_value_textBox.Enabled = false;
+            this.KD_value_textBox.Location = new System.Drawing.Point(6, 43);
+            this.KD_value_textBox.Name = "KD_value_textBox";
+            this.KD_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.KD_value_textBox.TabIndex = 4;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(155, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(31, 13);
+            this.label29.TabIndex = 3;
+            this.label29.Text = "иное";
+            // 
+            // label28
+            // 
+            this.label28.AutoEllipsis = true;
+            this.label28.Location = new System.Drawing.Point(114, 14);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(43, 28);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "доспех/харак";
+            // 
+            // label27
+            // 
+            this.label27.AutoEllipsis = true;
+            this.label27.Location = new System.Drawing.Point(72, 14);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(46, 26);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "10 + 1/2 ур.";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(36, 71);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(37, 13);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "СТОЙ";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(36, 46);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(23, 13);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "КД";
+            // 
+            // myClass_comboBox
+            // 
+            this.myClass_comboBox.FormattingEnabled = true;
+            this.myClass_comboBox.Items.AddRange(new object[] {
+            "Военачальник",
+            "Воин",
+            "Волшебник",
+            "Жрец",
+            "Колдун",
+            "Паладин",
+            "Плут",
+            "Следопыт"});
+            this.myClass_comboBox.Location = new System.Drawing.Point(778, 28);
+            this.myClass_comboBox.Name = "myClass_comboBox";
+            this.myClass_comboBox.Size = new System.Drawing.Size(154, 21);
+            this.myClass_comboBox.TabIndex = 8;
+            this.myClass_comboBox.SelectedIndexChanged += new System.EventHandler(this.myClass_comboBox_SelectedIndexChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(736, 31);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Класс:";
             // 
             // dices_groupBox
             // 
@@ -268,9 +441,9 @@
             this.dices_groupBox.Controls.Add(this.dices_label);
             this.dices_groupBox.Controls.Add(this.dices_value_textBox);
             this.dices_groupBox.Controls.Add(this.dices_amount_textBox);
-            this.dices_groupBox.Location = new System.Drawing.Point(736, 28);
+            this.dices_groupBox.Location = new System.Drawing.Point(739, 55);
             this.dices_groupBox.Name = "dices_groupBox";
-            this.dices_groupBox.Size = new System.Drawing.Size(158, 290);
+            this.dices_groupBox.Size = new System.Drawing.Size(193, 278);
             this.dices_groupBox.TabIndex = 6;
             this.dices_groupBox.TabStop = false;
             this.dices_groupBox.Text = "Кубики";
@@ -282,12 +455,12 @@
             this.dices_log_textBox.Name = "dices_log_textBox";
             this.dices_log_textBox.ReadOnly = true;
             this.dices_log_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dices_log_textBox.Size = new System.Drawing.Size(145, 222);
+            this.dices_log_textBox.Size = new System.Drawing.Size(178, 204);
             this.dices_log_textBox.TabIndex = 4;
             // 
             // dices_throw_button
             // 
-            this.dices_throw_button.Location = new System.Drawing.Point(67, 25);
+            this.dices_throw_button.Location = new System.Drawing.Point(110, 23);
             this.dices_throw_button.Name = "dices_throw_button";
             this.dices_throw_button.Size = new System.Drawing.Size(75, 23);
             this.dices_throw_button.TabIndex = 3;
@@ -298,7 +471,7 @@
             // dices_label
             // 
             this.dices_label.AutoSize = true;
-            this.dices_label.Location = new System.Drawing.Point(26, 29);
+            this.dices_label.Location = new System.Drawing.Point(34, 29);
             this.dices_label.Name = "dices_label";
             this.dices_label.Size = new System.Drawing.Size(13, 13);
             this.dices_label.TabIndex = 2;
@@ -306,21 +479,21 @@
             // 
             // dices_value_textBox
             // 
-            this.dices_value_textBox.Location = new System.Drawing.Point(40, 26);
+            this.dices_value_textBox.Location = new System.Drawing.Point(49, 25);
             this.dices_value_textBox.Name = "dices_value_textBox";
             this.dices_value_textBox.Size = new System.Drawing.Size(21, 20);
             this.dices_value_textBox.TabIndex = 1;
             // 
             // dices_amount_textBox
             // 
-            this.dices_amount_textBox.Location = new System.Drawing.Point(7, 26);
+            this.dices_amount_textBox.Location = new System.Drawing.Point(10, 26);
             this.dices_amount_textBox.Name = "dices_amount_textBox";
-            this.dices_amount_textBox.Size = new System.Drawing.Size(16, 20);
+            this.dices_amount_textBox.Size = new System.Drawing.Size(20, 20);
             this.dices_amount_textBox.TabIndex = 0;
             // 
             // submit_button
             // 
-            this.submit_button.Location = new System.Drawing.Point(736, 483);
+            this.submit_button.Location = new System.Drawing.Point(857, 483);
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(75, 23);
             this.submit_button.TabIndex = 5;
@@ -2194,7 +2367,7 @@
             this.талантыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(906, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(940, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2210,14 +2383,14 @@
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.сохранитьToolStripMenuItem.Text = "Импорт";
             this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.импортToolStripMenuItem_Click);
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.загрузитьToolStripMenuItem.Text = "Экспорт";
             // 
             // снаряжениеToolStripMenuItem
@@ -2234,11 +2407,111 @@
             this.талантыToolStripMenuItem.Text = "Таланты";
             this.талантыToolStripMenuItem.Click += new System.EventHandler(this.талантыToolStripMenuItem_Click);
             // 
+            // reaction_value_textBox
+            // 
+            this.reaction_value_textBox.Enabled = false;
+            this.reaction_value_textBox.Location = new System.Drawing.Point(7, 92);
+            this.reaction_value_textBox.Name = "reaction_value_textBox";
+            this.reaction_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_value_textBox.TabIndex = 4;
+            // 
+            // will_value_textBox
+            // 
+            this.will_value_textBox.Enabled = false;
+            this.will_value_textBox.Location = new System.Drawing.Point(7, 116);
+            this.will_value_textBox.Name = "will_value_textBox";
+            this.will_value_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_value_textBox.TabIndex = 4;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(36, 95);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(35, 13);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "РЕАК";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(35, 119);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(38, 13);
+            this.label32.TabIndex = 5;
+            this.label32.Text = "ВОЛЯ";
+            // 
+            // durability_lvl_textBox
+            // 
+            this.durability_lvl_textBox.Enabled = false;
+            this.durability_lvl_textBox.Location = new System.Drawing.Point(80, 68);
+            this.durability_lvl_textBox.Name = "durability_lvl_textBox";
+            this.durability_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_lvl_textBox.TabIndex = 4;
+            // 
+            // durability_armor_textBox
+            // 
+            this.durability_armor_textBox.Location = new System.Drawing.Point(118, 68);
+            this.durability_armor_textBox.Name = "durability_armor_textBox";
+            this.durability_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_armor_textBox.TabIndex = 4;
+            // 
+            // durability_other_textBox
+            // 
+            this.durability_other_textBox.Location = new System.Drawing.Point(156, 68);
+            this.durability_other_textBox.Name = "durability_other_textBox";
+            this.durability_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.durability_other_textBox.TabIndex = 4;
+            // 
+            // reaction_lvl_textBox
+            // 
+            this.reaction_lvl_textBox.Enabled = false;
+            this.reaction_lvl_textBox.Location = new System.Drawing.Point(80, 92);
+            this.reaction_lvl_textBox.Name = "reaction_lvl_textBox";
+            this.reaction_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_lvl_textBox.TabIndex = 4;
+            // 
+            // will_lvl_textBox
+            // 
+            this.will_lvl_textBox.Enabled = false;
+            this.will_lvl_textBox.Location = new System.Drawing.Point(80, 116);
+            this.will_lvl_textBox.Name = "will_lvl_textBox";
+            this.will_lvl_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_lvl_textBox.TabIndex = 4;
+            // 
+            // will_armor_textBox
+            // 
+            this.will_armor_textBox.Location = new System.Drawing.Point(118, 116);
+            this.will_armor_textBox.Name = "will_armor_textBox";
+            this.will_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_armor_textBox.TabIndex = 4;
+            // 
+            // reaction_armor_textBox
+            // 
+            this.reaction_armor_textBox.Location = new System.Drawing.Point(118, 92);
+            this.reaction_armor_textBox.Name = "reaction_armor_textBox";
+            this.reaction_armor_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_armor_textBox.TabIndex = 4;
+            // 
+            // reaction_other_textBox
+            // 
+            this.reaction_other_textBox.Location = new System.Drawing.Point(156, 92);
+            this.reaction_other_textBox.Name = "reaction_other_textBox";
+            this.reaction_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.reaction_other_textBox.TabIndex = 4;
+            // 
+            // will_other_textBox
+            // 
+            this.will_other_textBox.Location = new System.Drawing.Point(156, 116);
+            this.will_other_textBox.Name = "will_other_textBox";
+            this.will_other_textBox.Size = new System.Drawing.Size(29, 20);
+            this.will_other_textBox.TabIndex = 4;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 517);
+            this.ClientSize = new System.Drawing.Size(940, 517);
             this.Controls.Add(this.main_panel);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -2247,6 +2520,8 @@
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.dices_groupBox.ResumeLayout(false);
             this.dices_groupBox.PerformLayout();
             this.skills_groupBox.ResumeLayout(false);
@@ -2467,9 +2742,35 @@
         private System.Windows.Forms.Label dices_label;
         private System.Windows.Forms.TextBox dices_value_textBox;
         private System.Windows.Forms.Button dices_throw_button;
-        private System.Windows.Forms.TextBox dices_log_textBox;
         private System.Windows.Forms.ToolStripMenuItem снаряжениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem талантыToolStripMenuItem;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ComboBox myClass_comboBox;
+        private System.Windows.Forms.TextBox dices_log_textBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox KD_other_textBox;
+        private System.Windows.Forms.TextBox KD_armor_textBox;
+        private System.Windows.Forms.TextBox KD_lvl_textBox;
+        private System.Windows.Forms.TextBox KD_value_textBox;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox durability_value_textBox;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox will_value_textBox;
+        private System.Windows.Forms.TextBox reaction_value_textBox;
+        private System.Windows.Forms.TextBox will_other_textBox;
+        private System.Windows.Forms.TextBox durability_other_textBox;
+        private System.Windows.Forms.TextBox reaction_other_textBox;
+        private System.Windows.Forms.TextBox reaction_armor_textBox;
+        private System.Windows.Forms.TextBox will_armor_textBox;
+        private System.Windows.Forms.TextBox will_lvl_textBox;
+        private System.Windows.Forms.TextBox durability_armor_textBox;
+        private System.Windows.Forms.TextBox reaction_lvl_textBox;
+        private System.Windows.Forms.TextBox durability_lvl_textBox;
     }
 }
 

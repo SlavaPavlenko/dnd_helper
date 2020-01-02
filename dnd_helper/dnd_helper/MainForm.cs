@@ -654,6 +654,78 @@ namespace dnd_helper
             }
             catch (Exception) { }
         }
+        private void KDValue_change()
+        {
+            int lvl = 0;
+            int armor = 0;
+            int other = 0;
+
+            if (lvl_textBox.Text != "")
+                lvl = Convert.ToInt32(lvl_textBox.Text) / 2 + 10;
+            KD_lvl_textBox.Text = lvl.ToString();
+
+            if (KD_armor_textBox.Text != "")
+                armor = Convert.ToInt32(KD_armor_textBox.Text);
+
+            if (KD_other_textBox.Text != "")
+                other = Convert.ToInt32(KD_other_textBox.Text);
+
+            KD_value_textBox.Text = (lvl + armor + other).ToString();
+        }
+        private void DurabilityValue_change()
+        {
+            int lvl = 0;
+            int armor = 0;
+            int other = 0;
+
+            if (lvl_textBox.Text != "")
+                lvl = Convert.ToInt32(lvl_textBox.Text) / 2 + 10;
+            durability_lvl_textBox.Text = lvl.ToString();
+
+            if (durability_armor_textBox.Text != "")
+                armor = Convert.ToInt32(durability_armor_textBox.Text);
+
+            if (durability_other_textBox.Text != "")
+                other = Convert.ToInt32(durability_other_textBox.Text);
+
+            durability_value_textBox.Text = (lvl + armor + other).ToString();
+        }
+        private void ReactionValue_change()
+        {
+            int lvl = 0;
+            int armor = 0;
+            int other = 0;
+
+            if (lvl_textBox.Text != "")
+                lvl = Convert.ToInt32(lvl_textBox.Text) / 2 + 10;
+            reaction_lvl_textBox.Text = lvl.ToString();
+
+            if (reaction_armor_textBox.Text != "")
+                armor = Convert.ToInt32(reaction_armor_textBox.Text);
+
+            if (reaction_other_textBox.Text != "")
+                other = Convert.ToInt32(reaction_other_textBox.Text);
+
+            reaction_value_textBox.Text = (lvl + armor + other).ToString();
+        }
+        private void WillValue_change()
+        {
+            int lvl = 0;
+            int armor = 0;
+            int other = 0;
+
+            if (lvl_textBox.Text != "")
+                lvl = Convert.ToInt32(lvl_textBox.Text) / 2 + 10;
+            will_lvl_textBox.Text = lvl.ToString();
+
+            if (will_armor_textBox.Text != "")
+                armor = Convert.ToInt32(will_armor_textBox.Text);
+
+            if (will_other_textBox.Text != "")
+                other = Convert.ToInt32(will_other_textBox.Text);
+
+            will_value_textBox.Text = (lvl + armor + other).ToString();
+        }
         private void submit_button_Click(object sender, EventArgs e)
         {
             strange_change();
@@ -701,6 +773,11 @@ namespace dnd_helper
             //хиты
             healingValue_change();
             wounded_change();
+            //защиты
+            KDValue_change();
+            DurabilityValue_change();
+            ReactionValue_change();
+            WillValue_change();
         }
 
         private void strange_hilight_on()
@@ -1198,6 +1275,13 @@ namespace dnd_helper
                 importForm = new Import();
             importForm.Show();
             importForm.BringToFront();
+        }
+
+        //Класс
+        public static string MyClass = "";
+        private void myClass_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MyClass = myClass_comboBox.SelectedItem.ToString();
         }
     }
 }

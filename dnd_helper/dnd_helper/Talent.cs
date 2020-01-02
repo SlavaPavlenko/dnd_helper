@@ -5,6 +5,7 @@ namespace dnd_helper
 {
     public partial class Talent : Form
     {
+        public string TalentClass;
         public string TalentName;
         public int Level;
         public string Description;
@@ -26,9 +27,10 @@ namespace dnd_helper
             InitializeComponent();
         }
 
-        public Talent(string name, int level, string description, string usageRate, string keyWords, string actionType, string required, string condition,
+        public Talent(string talentClass, string name, int level, string description, string usageRate, string keyWords, string actionType, string required, string condition,
             string target, string feature, string attack, string hit, string miss, string effect, string lvlUpgrades)
         {
+            TalentClass = talentClass;
             TalentName = name;
             Level = level;
             Description = description;
@@ -48,21 +50,22 @@ namespace dnd_helper
 
         public Talent(string[] values)
         {
-            TalentName = values[0];
-            Level = Convert.ToInt32(values[1]);
-            Description = values[2];
-            UsageRate = values[3];
-            KeyWords = values[4];
-            ActionType = values[5];
-            Required = values[6];
-            Condition = values[7];
-            Target = values[8];
-            Feature = values[9];
-            Attack = values[10];
-            Hit = values[11];
-            Miss = values[12];
-            Effect = values[13];
-            LvlUpgrades = values[14];
+            TalentClass = values[0];
+            TalentName = values[1];
+            Level = Convert.ToInt32(values[2]);
+            Description = values[3];
+            UsageRate = values[4];
+            KeyWords = values[5];
+            ActionType = values[6];
+            Required = values[7];
+            Condition = values[8];
+            Target = values[9];
+            Feature = values[10];
+            Attack = values[11];
+            Hit = values[12];
+            Miss = values[13];
+            Effect = values[14];
+            LvlUpgrades = values[15];
         }
 
         public void TalentLoad()
