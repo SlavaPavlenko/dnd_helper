@@ -8,6 +8,12 @@ namespace dnd_helper
         public MyTalents()
         {
             InitializeComponent();
+            Resize += new EventHandler(this.MyTalents_Resize);
+        }
+        private void MyTalents_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+                mainForm.notifyIcon.Visible = true;
         }
         TalentList talentList = new TalentList();
         private void addTalent_btn_Click(object sender, EventArgs e)
@@ -34,6 +40,12 @@ namespace dnd_helper
                 talentForm.BringToFront();
                 talentForm.WindowState = FormWindowState.Normal;
             }
+        }
+
+        private void MyTalents_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            Hide();
         }
     }
 }

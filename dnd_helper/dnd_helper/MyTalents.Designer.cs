@@ -115,6 +115,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MyTalents";
             this.Text = "Таланты";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MyTalents_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

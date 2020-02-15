@@ -9,9 +9,41 @@ namespace dnd_helper
 {
     public partial class mainForm : Form
     {
+        public static NotifyIcon notifyIcon = new NotifyIcon();
         public mainForm()
         {
             InitializeComponent();
+            //иконка в трее
+            notifyIcon.Icon = new Icon(Directory.GetCurrentDirectory() + "\\NotifyIco.ico");
+            notifyIcon.Visible = false;
+            notifyIcon.MouseDoubleClick += new MouseEventHandler(notifyIcon_MouseDoubleClick);
+            Resize += new EventHandler(this.mainForm_Resize);
+        }
+        //сворачивание в трей
+        private void mainForm_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon.Visible = true;
+            }
+        }
+        //разворачивание из трея
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            notifyIcon.Visible = false;
+            WindowState = FormWindowState.Normal;
+            if (backpackForm.Created)
+            {
+                backpackForm.WindowState = FormWindowState.Normal;
+                backpackForm.Show();
+            }
+            if (talentsForm.Created)
+            {
+                talentsForm.WindowState = FormWindowState.Normal;
+                talentsForm.Show();
+            }
         }
         private void strange_change()
         {
@@ -1431,8 +1463,8 @@ namespace dnd_helper
             while (!reader.EndOfStream)
             {
                 string str = reader.ReadLine();
-                string[] valuse = str.Split('|');
-                allTalents.Add(new Talent(valuse));
+                string[] values = str.Split('|');
+                allTalents.Add(new Talent(values));
             }
             reader.Dispose();
         }
